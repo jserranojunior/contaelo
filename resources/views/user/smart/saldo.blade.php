@@ -17,7 +17,7 @@
             <table class="table  table-hover">
                     <tbody><tr>
                         <td class="text-left">
-                            SMART
+                            ELO
                         </td>
                         <td class="text-right">
                           

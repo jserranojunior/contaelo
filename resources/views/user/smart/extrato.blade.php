@@ -15,8 +15,8 @@
             <table class="table  table-hover">
             <thead>    
             <tr>
-                    <td>DATA</td>
-                    <td class="text-right">SMART</td>
+                    <td class="text-left">DATA</td>
+                    <td class="text-right">ELO</td>
                 </tr>
         </thead>
                             <tbody>

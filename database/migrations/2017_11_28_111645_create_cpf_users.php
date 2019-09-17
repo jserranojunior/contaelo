@@ -14,7 +14,7 @@ class CreateCpfUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->bigInteger('cpf');
+            $table->string('cpf');
         });
     }
 

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Smart | Início </title>
+  <title>Elo | Início </title>
 
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
@@ -224,7 +224,7 @@
     </a>
 
     <!-- Default to the left -->
-    <strong> <a href="/">SMART MAIS</a> - </strong> Realizando sonhos 
+    <strong> <a href="/">CONTA ELO</a> - </strong> Realizando sonhos 
     
   </footer>
 
