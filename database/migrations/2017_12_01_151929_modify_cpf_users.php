@@ -14,7 +14,7 @@ class ModifyCpfUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->bigInteger('cpf')->nullable()->change();
+            $table->string('cpf')->nullable()->change();
            
         });
     }

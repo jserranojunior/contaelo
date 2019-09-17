@@ -24,9 +24,9 @@
 
 
     <a href="#" class="logo">
-      <span class="logo-mini"><b>C</b>S</span>
+      <span class="logo-mini"><b>C</b>E</span>
       <span class="logo-lg">
-      SMART<b> + </b></span>
+      CONTA<b> ELO </b></span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
@@ -224,7 +224,7 @@
     </a>
 
     <!-- Default to the left -->
-    <strong> <a href="/">SMART</a> - </strong> Realizando sonhos 
+    <strong> <a href="/">SMART MAIS</a> - </strong> Realizando sonhos 
     
   </footer>
 

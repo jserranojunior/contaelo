@@ -9,7 +9,7 @@
         <div class="col-lg-offset-2 col-lg-8">
         <div class="box">
             <div class="header-box">           
-            <h2 class="center">SMART + </h2>
+            <h2 class="center">CONTA ELO</h2>
             </div>
 
             <div class="body-box">

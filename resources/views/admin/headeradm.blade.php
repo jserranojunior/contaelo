@@ -21,8 +21,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <header class="main-header">
  
     <a href="#" class="logo">
-      <span class="logo-mini"><b>C</b>S</span>
-      <span class="logo-lg"><b>SMART</span>
+      <span class="logo-mini"><b>C</b>E</span>
+      <span class="logo-lg"><b>CONTA</span>
     </a>
 
 

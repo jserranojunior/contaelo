@@ -149,7 +149,7 @@
                                                         <tr>
                                                             <td><input type="checkbox"></td>
                                                             <td>21/07/2019</td>
-                                                            <td><span class="text-danger">  Smart + </span></td>
+                                                            <td><span class="text-danger">  CONTA ELO</span></td>
                                                             <td><span class="text-danger">  180,00 </span></td>
                                                             <td><span class="text-danger">  180,00 </span></td>
                                                             <td><span class="text-danger">  <i class="fas fa-circle"></i> </span></td>
@@ -159,7 +159,7 @@
                                                         <tr>
                                                             <td><input type="checkbox"></td>
                                                             <td>21/07/2019</td>
-                                                            <td><span class="text-success">  Smart + </span></td>
+                                                            <td><span class="text-success">  CONTA ELO </span></td>
                                                             <td><span class="text-success">  190,00 </span></td>
                                                             <td><span class="text-success">  10,00 </span></td>
                                                             <td><span class="text-success">  <i class="fas fa-circle"></i> </span></td>

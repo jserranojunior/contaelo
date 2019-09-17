@@ -26,7 +26,7 @@
     <a href="#" class="logo">
       <span class="logo-mini"><b>C</b>S</span>
       <span class="logo-lg">
-      CONTA <b> SMART </b></span>
+      CONTA <b> ELO </b></span>
     </a>
 
     <nav class="navbar navbar-static-top" role="navigation">
