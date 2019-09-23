@@ -9,7 +9,7 @@
         <div class="col-lg-offset-2 col-lg-8">
         <div class="box">
             <div class="header-box">
-            <h2 class="center">DEPOSITO SMARTCOIN</h2>
+            <h2 class="center">DEPOSITO ELO</h2>
             </div>
             <div class="body-box">
            
@@ -17,7 +17,7 @@
            <form action="{{url('/smart/deposito/novo')}}" method="post" class="form-horizontal">
              
               <div class="form-group ">
-                <label for="valor" class="col-lg-6 ">SMARTCOIN</label>
+                <label for="valor" class="col-lg-6 ">ELO VALOR</label>
                 <div class="col-lg-6">  
                   <input type="text" class="form-control dinheiro_mascara" name="valor" required>
                 </div>

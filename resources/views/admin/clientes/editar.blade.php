@@ -54,7 +54,7 @@
 
 
             <td>
-                <label for="valor_coin" class="label-control"> Valor Smart </label>
+                <label for="valor_coin" class="label-control"> Valor</label>
             </td>
             <td> 
                 <input type="text" value="{{$item->coin_valor}}" class="form-control dinheiro_mascara" name="valor_coin">
@@ -69,7 +69,7 @@
 
 
             <td>
-                <label for="data_coin" class="label-control"> Data Smart </label>
+                <label for="data_coin" class="label-control"> Data valor </label>
             </td>
             <td> 
                 <input type="date" value="" class="form-control" name="data_coin">

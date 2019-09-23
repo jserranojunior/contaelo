@@ -178,8 +178,8 @@
             </ul>
           </li>
 
-        <li class=""><a href="#"><i class="fa fa-money "></i> <span>SMARTCOIN</span></a></li>
-        <li class=""><a target="_blank" href="https://app.conta.mobi/login"><i class="fa fa-university"></i> <span>SMART VISA</span></a></li>  
+        <li class=""><a href="#"><i class="fa fa-money "></i> <span>ELO</span></a></li>
+        <li class=""><a target="_blank" href="https://app.conta.mobi/login"><i class="fa fa-university"></i> <span>ELO</span></a></li>  
 
         
         

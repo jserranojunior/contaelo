@@ -4,7 +4,7 @@
    <div class="row-space-header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">            
-                <img class="img-logo img-fluid" src="img/logosmart.png" alt="">          
+                <img class="img-logo img-fluid" src="img/elo-logo.png" alt="">          
         </a> 
         
 

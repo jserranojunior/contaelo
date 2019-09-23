@@ -5,7 +5,7 @@
 <div class="content-wrapper">
     <section class="content-header text-center">
         <h1>
-        EDITAR VALOR SMARTCOIN <br>
+        EDITAR VALOR <br>
         <small></small>
         </h1>      
     </section>

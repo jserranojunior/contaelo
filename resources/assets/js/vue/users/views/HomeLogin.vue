@@ -98,7 +98,7 @@
                         <h4>
                             <i class="fas fa-chart-line"></i>
                         </h4>
-                        <p class=" text-btn-func text-center"> Smart Invest </p>
+                        <p class=" text-btn-func text-center"> Elo Invest </p>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                 <div class="btn btn-light">SUPORTE</div>
             </div>
             <div class="col-6 text-right">
-                <div class="btn btn-light">SMART PAY</div>
+                <div class="btn btn-light">ELO</div>
             </div>
         </div>
     

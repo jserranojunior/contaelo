@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CONTA SMARTCOIN</title>
+    <title>CONTA ELO</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/creative/bootstrap.css" rel="stylesheet">
@@ -77,7 +77,7 @@
         <div class="row  row-servicos">
             <div class="col-md-4">
                 <img class="img-fluid logo-inicial" src="{{URL('/img/logovisa.png')}}" alt="">
-                  <h3>SMART VISA</h3>
+                  <h3>ELO</h3>
                   <p class="text-muted">Banco digital</p>
               </div>
           
