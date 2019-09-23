@@ -57,10 +57,10 @@
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Realizando sonhos
+      Conta ELo
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2017 <a href="#">Smart +</a>.</strong>
+    <strong>Copyright &copy; 2017 <a href="#">Elo</a>.</strong>
   </footer>
 
   <!-- Control Sidebar -->

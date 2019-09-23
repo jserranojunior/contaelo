@@ -162,10 +162,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Realizando sonhos
+      Conta Elo
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2017 <a href="#">SMART +</a>.</strong>
+    <strong>Copyright &copy; 2017 <a href="#">Elo</a>.</strong>
   </footer>
 
   <!-- Control Sidebar -->
