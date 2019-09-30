@@ -12,29 +12,23 @@
                     <div class="row row-space justify-content-sm-center">
                 <div class="col-12">
                     <div class="form-group">
-                        <input class="form-control input-main-login" v-model="inputs.name" type="text" placeholder="NOME COMPLETO">
+                        <input class="form-control input-main-login" v-model="inputs.name" type="text" placeholder="Digite seu nome completo">
                     </div>
     
                     <div class="form-group">
-                        <input class="form-control input-main-login" v-model="inputs.email" type="text" placeholder="EMAIL">
+                        <input class="form-control input-main-login" v-model="inputs.email" type="text" placeholder="Digite seu e-mail">
                     </div>
     
                     <div class="form-group">                        
                            
-                                <input class="form-control input-main-login" v-model="inputs.celular" v-mask="'(##) #####-####'" type="text" placeholder="TELEFONE">
+                                <input class="form-control input-main-login" v-model="inputs.celular" v-mask="'+### (##) #####-####'" type="text" placeholder="Telefone +000 (00) 00000-0000">
                                                          
                     </div>
-
-                    <div class="form-group">                        
-                           
-                                <input class="form-control input-main-login" v-model="inputs.cpf" v-mask="'###.###.###-##'" type="text" placeholder="CPF">
-                           
-                                                 
-                    </div>
+                    
     
                     <div class="form-group">
                            
-                                <input class="form-control input-main-login" v-model="inputs.password" type="password" placeholder="SENHA">
+                                <input class="form-control input-main-login" v-model="inputs.password" type="password" placeholder="Crie sua senha">
                            
                     </div>
                     <div class="form-group">

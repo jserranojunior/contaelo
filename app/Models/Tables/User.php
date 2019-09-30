@@ -13,13 +13,13 @@ class User extends Model
         'name',
         'email',
         'password',        
-        'cpf',        
+        // 'cpf',        
         'celular',        
     ];
 
     public $rules = [                
         'email'    => 'required|unique:users',
-        'cpf'      => 'required|unique:users',       
+        // 'cpf'      => 'required|unique:users',       
         'password'      => 'required',               
     ];
 }

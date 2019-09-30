@@ -21,8 +21,8 @@ class NewRegisterController extends Controller
             $data = $data->all();                       
             $messages = [
                 'email.required' => 'Email está vazio',
-                'cpf.required' => 'CPF está vazio',
-                'cpf.unique' => 'Já existe esse CPF cadastrado',
+                // 'cpf.required' => 'CPF está vazio',
+                // 'cpf.unique' => 'Já existe esse CPF cadastrado',
                 'email.unique' => 'Já existe esse EMAIL cadastrado',
                 'password.required' => 'É necessario colocar a senha',
             ];                         

@@ -17572,7 +17572,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* input.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder, \n.form-control:-ms-input-placeholder, \n.form-control::-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n    color: white;\n} */\nbody, html {\n   /* :style=\"{  }\" */\n   /* background-image: url(\"../../../img/bg-conta-elo.png\"); */\nbackground-size:cover;\n\n   \n      background-color: #00A4BA;\n              height: 100%;\n\n        margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n     height: 100%;\n     width: 100%;\n       background-repeat: repeat-y;\n}\n.text-smart {\n    color: #00A4BA\n}\n.img-logo-topo{\n    width: 200px;\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* input.form-control.input-main-login {\n    margin-bottom: 10px;\n    border: aliceblue;\n    border-bottom: 1px solid white;\n    background-color: #f0f8ff00;\n    color: white;\n    border-radius: 0rem;\n}\n\n.form-control:focus {\n    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);\n}\n.form-control::-moz-placeholder, \n.form-control:-ms-input-placeholder, \n.form-control::-ms-input-placeholder,\n.form-control::-webkit-input-placeholder {\n    color: white;\n} */\nbody, html {\n   /* :style=\"{  }\" */\n   /* background-image: url(\"../../../img/bg-conta-elo.png\"); */\nbackground-size:cover;\n\n   \n      background-color: #00A4BA;\n              height: 100%;\n\n        margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n     height: 100%;\n     width: 100%;\n       background-repeat: repeat-y;\n}\n.text-smart {\n    color: #00A4BA\n}\n.img-logo-topo{\n    width: 200px;\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 30px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -17587,12 +17587,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_the_mask___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue_the_mask__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_axios__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -18551,7 +18545,10 @@ var render = function() {
                       }
                     ],
                     staticClass: "form-control input-main-login",
-                    attrs: { type: "text", placeholder: "NOME COMPLETO" },
+                    attrs: {
+                      type: "text",
+                      placeholder: "Digite seu nome completo"
+                    },
                     domProps: { value: _vm.inputs.name },
                     on: {
                       input: function($event) {
@@ -18575,7 +18572,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "form-control input-main-login",
-                    attrs: { type: "text", placeholder: "EMAIL" },
+                    attrs: { type: "text", placeholder: "Digite seu e-mail" },
                     domProps: { value: _vm.inputs.email },
                     on: {
                       input: function($event) {
@@ -18600,12 +18597,15 @@ var render = function() {
                       {
                         name: "mask",
                         rawName: "v-mask",
-                        value: "(##) #####-####",
-                        expression: "'(##) #####-####'"
+                        value: "+### (##) #####-####",
+                        expression: "'+### (##) #####-####'"
                       }
                     ],
                     staticClass: "form-control input-main-login",
-                    attrs: { type: "text", placeholder: "TELEFONE" },
+                    attrs: {
+                      type: "text",
+                      placeholder: "Telefone +000 (00) 00000-0000"
+                    },
                     domProps: { value: _vm.inputs.celular },
                     on: {
                       input: function($event) {
@@ -18624,42 +18624,12 @@ var render = function() {
                       {
                         name: "model",
                         rawName: "v-model",
-                        value: _vm.inputs.cpf,
-                        expression: "inputs.cpf"
-                      },
-                      {
-                        name: "mask",
-                        rawName: "v-mask",
-                        value: "###.###.###-##",
-                        expression: "'###.###.###-##'"
-                      }
-                    ],
-                    staticClass: "form-control input-main-login",
-                    attrs: { type: "text", placeholder: "CPF" },
-                    domProps: { value: _vm.inputs.cpf },
-                    on: {
-                      input: function($event) {
-                        if ($event.target.composing) {
-                          return
-                        }
-                        _vm.$set(_vm.inputs, "cpf", $event.target.value)
-                      }
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("input", {
-                    directives: [
-                      {
-                        name: "model",
-                        rawName: "v-model",
                         value: _vm.inputs.password,
                         expression: "inputs.password"
                       }
                     ],
                     staticClass: "form-control input-main-login",
-                    attrs: { type: "password", placeholder: "SENHA" },
+                    attrs: { type: "password", placeholder: "Crie sua senha" },
                     domProps: { value: _vm.inputs.password },
                     on: {
                       input: function($event) {
