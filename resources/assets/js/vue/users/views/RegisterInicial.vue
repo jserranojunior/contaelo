@@ -64,7 +64,7 @@
            
             <div class="row justify-content-center">
                 <div class="col-sm-10 col-md-2 col-lg-2 text-center">
-                    <a href="https://play.google.com/store/apps/details?id=com.alvitre.contasmartmais">
+                    <a href="#">
                             <img class="img-logo img-fluid" src="img/disponivel-googleplay.png" alt="">
                     </a>
             

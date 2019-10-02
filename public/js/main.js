@@ -18724,21 +18724,12 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-sm-10 col-md-2 col-lg-2 text-center" }, [
-        _c(
-          "a",
-          {
-            attrs: {
-              href:
-                "https://play.google.com/store/apps/details?id=com.alvitre.contasmartmais"
-            }
-          },
-          [
-            _c("img", {
-              staticClass: "img-logo img-fluid",
-              attrs: { src: "img/disponivel-googleplay.png", alt: "" }
-            })
-          ]
-        )
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            staticClass: "img-logo img-fluid",
+            attrs: { src: "img/disponivel-googleplay.png", alt: "" }
+          })
+        ])
       ])
     ])
   }
