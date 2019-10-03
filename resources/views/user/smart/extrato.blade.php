@@ -26,7 +26,7 @@
                                     {{$item->data_efetuada}}
                                 </td>
                                 <td class="text-right">
-                                    {{$item->tipo}}<span >{{$item->valor}}</span>
+                                    {{$item->tipo}}<span>{{number_format($item->valor, 2,',','.')}}</span>
                                 </td>
                             </tr>
                             @endforeach
