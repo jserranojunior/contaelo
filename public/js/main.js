@@ -16627,7 +16627,7 @@ var staticRenderFns = [
             _vm._v(" "),
             _c("span", { staticClass: "navbar-text text-right" }, [
               _c("i", { staticClass: "fab fa-whatsapp text-success" }),
-              _vm._v(" (11) 98675-2530\n            ")
+              _vm._v(" (11) 9980-68930\n            ")
             ]),
             _vm._v(" "),
             _c(

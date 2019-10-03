@@ -192,7 +192,7 @@
           <!-- </i><span>TRANSFÊRENCIA</span></a> -->
         </li>
 
-        <li ><a class="link-whatsapp" href="whatsapp://send?phone=5511986752530"><i class="fa fa-comments">
+        <li ><a class="link-whatsapp" href="whatsapp://send?phone=5511998068930"><i class="fa fa-comments">
           </i><span>CONTATO</span></a>
         </li>   
 
@@ -216,7 +216,7 @@
   <footer class="main-footer">
   
     <!-- To the right -->
-    <a class="link-whatsapp" id="link-whatsapp-footer"  href="whatsapp://send?phone=5511986752530">
+    <a class="link-whatsapp" id="link-whatsapp-footer"  href="whatsapp://send?phone=5511998068930">
       <div class="pull-right hidden-xs text-bold text-success">
          CONTATO
         <img class="img-reponsive logo-whats-footer" src="{{URL('img')}}/whatsapp.jpeg" alt="">
@@ -227,7 +227,7 @@
     <strong> <a href="/">CONTA ELO</a> - </strong> Realizando sonhos 
     
   </footer>
-
+ 
     <script>
   
  function isMobile()
@@ -241,9 +241,9 @@
 
 $(document).ready(function(){
   if($isMobile == true){  
-    $(".link-whatsapp").attr("href", "whatsapp://send?phone=5511986752530");         
+    $(".link-whatsapp").attr("href", "whatsapp://send?phone=5511998068930");         
   }else{
-    $(".link-whatsapp").attr("href", "https://web.whatsapp.com/send?phone=5511986752530"); 
+    $(".link-whatsapp").attr("href", "https://web.whatsapp.com/send?phone=5511998068930"); 
   }
 });
 

@@ -9,7 +9,7 @@
         
 
          <span class="navbar-text text-right">
-                <i class="fab fa-whatsapp text-success"></i> (11) 98675-2530
+                <i class="fab fa-whatsapp text-success"></i> (11) 9980-68930
             </span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
