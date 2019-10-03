@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class ModifyCpfUsers extends Migration
+class CpfNull extends Migration
 {
     /**
      * Run the migrations.
@@ -14,8 +14,7 @@ class ModifyCpfUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('cpf');
-           
+            $table->string('cpf')->change();
         });
     }
 
