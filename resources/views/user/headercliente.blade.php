@@ -171,16 +171,17 @@
               </a>
               <ul class="treeview-menu">
                  -->
+                 <li><a href="{{URL('smart/saldo')}}"><i class="fa fa-university"></i> <span>SALDO</span></a></li>
+            <li><a href="{{URL('smart/extrato')}}"><i class="fa fa-line-chart"></i> <span>EXTRATO</span></a></li>
             
-            <!-- <li><a href="{{URL('smart/deposito')}}"><i class="fa fa-plus-square-o"></i> <span>DEPOSITO</span></a></li> -->
-            <!-- <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-life-ring"></i> <span>RESGATE</span></a></li>           -->
+            <li><a href="{{URL('smart/deposito')}}"><i class="fa fa-plus-square-o"></i> <span>DEPOSITO</span></a></li>
+            <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-life-ring"></i> <span>RESGATE</span></a></li>          
             <!-- <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-circle-o-notch "></i> <span>TRANSFÊRENCIAS <br> ENTRE CONTAS</span></a></li>           -->
              
               <!-- </ul>
             </li> -->
 
-            <li><a href="{{URL('smart/saldo')}}"><i class="fa fa-university"></i> <span>SALDO</span></a></li>
-            <li><a href="{{URL('smart/extrato')}}"><i class="fa fa-line-chart"></i> <span>EXTRATO</span></a></li>
+            
         <!-- <li class=""><a target="_blank" href="https://app.conta.mobi/login"><i class="fa fa-university"></i> <span>MOBI VISA</span></a></li>   -->
 
        <!-- <li class=""><a target="_blank" href="https://meu.brasilprepagos.com.br/bpp?_ga=2.8126130.1635589378.1529004737-698247966.1526345326&_gac=1.250867188.1529004835.CjwKCAjwpIjZBRBsEiwA0TN1r4qyFvjPFSbp5mifabKgf3FAKymNuLCq6aBGLX4fIUPiMsO9Z6P0qhoCOC"><i class="fa fa-bold"></i> <span>BPP VISA</span></a></li>   -->
