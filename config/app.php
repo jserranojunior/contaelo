@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost/pasanaku'),
+    'url' => env('APP_URL', 'http://contaelo.com.br'),
 
     /*
     |--------------------------------------------------------------------------
