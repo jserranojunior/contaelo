@@ -67,10 +67,36 @@
                     <a href="#">
                             <img class="img-logo img-fluid" src="img/disponivel-googleplay.png" alt="">
                     </a>
-            
+           
                    
                 </div>
                        
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4 text-center">
+                <div class="icon-social text-primary">
+                    <a href="https://twitter.com/ContaElo" target="_blank">
+                        <h3><i class="fab fa-twitter"></i></h3>
+                    </a>
+                   
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="icon-social text-danger">
+                    <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
+                    <h3><i class="fab fa-instagram"></i></h3>
+                    </a>
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <div class="icon-social text-primary">
+                    <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
+                    <h3><i class="fab fa-facebook-f"></i></h3>
+                    </a>
+                </div>
+            </div>
+            
         </div>
     
                 </div>

@@ -21,6 +21,7 @@
   </div>
   <div class="row">
     <a href="#" src="{{URL('/img/google-play.png')}}" alt=""> </a>
+    twiier 
   </div>
 </div>
 
