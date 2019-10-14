@@ -1,229 +1,114 @@
 <template>
-    
-         <div class="wallpaper" >
-        <div class="container-fluid" >
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <img class="img-logo-topo img-logo img-fluid" src="img/elo-logo.png" alt="">                   
-                </div>
-            </div>              
+<div class="wallpaper">
+    <div class="container-fluid">
         <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="row row-space justify-content-sm-center">
-                <div class="col-12">
-                    <div class="form-group">
-                        <input class="form-control input-main-login" v-model="inputs.name" type="text" placeholder="Digite seu nome completo">
-                    </div>
-    
-                    <div class="form-group">
-                        <input class="form-control input-main-login" v-model="inputs.email" type="text" placeholder="Digite seu e-mail">
-                    </div>
-    
-                    <div class="form-group">                        
-                           
-                                <input class="form-control input-main-login" v-model="inputs.celular" v-mask="'+### (##) #####-####'" type="text" placeholder="Telefone +000 (00) 00000-0000">
-                                                         
-                    </div>
-                    
-    
-                    <div class="form-group">
-                           
-                                <input class="form-control input-main-login" v-model="inputs.password" type="password" placeholder="Crie sua senha">
-                           
-                    </div>
-                    <div class="form-group">
-                        <div class="row">
-                            <div class="col-6 text-left">
-                                <a href="./login">
-                                <div class="btn btn-outline-light font-weight-bold">FAZER LOGIN</div>
-                                </a>
-                            </div>
-
-                            <div class="col-6 text-right">
-                                <div class="btn btn-outline-light font-weight-bold" 
-                                @click="Register(inputs)">CADASTRAR</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row" v-if="message === 'Cadastrado'">
-                        <div class="col-12">
-                            <h5 class="text-center">CADASTRADO COM SUCESSO</h5>
-                        </div>
-                    </div>
-
-                    <div class="row" v-else>
-                        <div class="col-12">
-                            <h5 class="text-center">{{message}}</h5>
-                        </div>
-                    </div>
-
+            <div class="col-12 text-center">
+                <img class="img-logo-topo img-logo img-fluid" src="img/elo-logo.png" alt="">
+            </div>
+        </div>
+         <Login></Login>
+        <Register></Register>
+       <div class="row justify-content-center">
+            <div class="col-12 text-center">
+               <div class="icon-social text-primary">                    
+                        <h4><i class="fab fa-whatsapp text-success"></i>
+                            <span class="text-white">(11)99806-8930</span>
+                        </h4> 
                 </div>
             </div>
-
-           
-            <div class="row justify-content-center">
-                <div class="col-sm-10 col-md-2 col-lg-2 text-center">
-                    <a href="#">
-                            <img class="img-logo img-fluid" src="img/disponivel-googleplay.png" alt="">
-                    </a>
-           
-                   
-                </div>
-                       
         </div>
-
+        <div class="row justify-content-center">
+            <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
+                <a href="#">
+                    <img class="img-logo img-fluid" src="img/disponivel-googleplay.png" alt="">
+                </a>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-4 text-center">
                 <div class="icon-social text-primary">
                     <a href="https://twitter.com/ContaElo" target="_blank">
                         <h3><i class="fab fa-twitter"></i></h3>
                     </a>
-                   
                 </div>
             </div>
             <div class="col-4 text-center">
                 <div class="icon-social text-danger">
                     <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
-                    <h3><i class="fab fa-instagram"></i></h3>
+                        <h3><i class="fab fa-instagram"></i></h3>
                     </a>
                 </div>
             </div>
             <div class="col-4 text-center">
                 <div class="icon-social text-primary">
                     <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
-                    <h3><i class="fab fa-facebook-f"></i></h3>
+                        <h3><i class="fab fa-facebook-f"></i></h3>
                     </a>
                 </div>
             </div>
-            
         </div>
-    
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="icon-social text-white">
+                    <p>David Lira CEO</p>
                 </div>
-            </div>
+            </div>            
         </div>
     </div>
-  
-   
+</div>
+
 </template>
 
 <script>
-import { mask } from "vue-the-mask";
-import axios from 'axios'
+import Register from '../components/auth/Register'
+import Login from '../components/auth/Login'
 export default {
     name: "RegisterInicial",
     data() {
         return {
-            inputs: {},
-            data: "",
-            message: "",
             bgImagem: ""
         }
+    },    
+    beforeMount() {
+        document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')";
     },
-    methods: {
-        cadastrar() {
-            console.log(this.inputs)
-        },
- 
-          Register(inputs) {        
-            //   console.log(inputs)
-            var pathname = window.location.pathname;
-            let url = pathname + 'api/users/register';
-            
-            console.log(url)
-            
-            axios
-                .post(url, inputs)
-                .then(response => {                    
-                     
-                    this.data = response.data.data
-                    console.log(this.message) 
-                    this.inputs = {};     
-                    this.message = response.data.message  
-                })
-                .catch(function (error) {
-                 
-                    console.log(error);
-
-                });
-        },
-    },
-    beforeMount(){
-        
-
-        document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')"; 
-        // alert(window.location.hostname)
- 
-        
-    },
-    directives: { mask }
+    components:{
+        Register,
+        Login,
+    }
 }
 </script>
 
 <style>
-
-/* input.form-control.input-main-login {
-    margin-bottom: 10px;
-    border: aliceblue;
-    border-bottom: 1px solid white;
-    background-color: #f0f8ff00;
-    color: white;
-    border-radius: 0rem;
+body,
+html {
+    background-size: cover;
+    background-repeat:repeat-y;
+    background-color: #00A4BA;
+  
+    margin: 0px;
 }
-
-.form-control:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0);
-}
-.form-control::-moz-placeholder, 
-.form-control:-ms-input-placeholder, 
-.form-control::-ms-input-placeholder,
-.form-control::-webkit-input-placeholder {
-    color: white;
-} */
-
-body, html {
-   /* :style="{  }" */
-   /* background-image: url("../../../img/bg-conta-elo.png"); */
-background-size:cover;
-
-   
-      background-color: #00A4BA;
-              height: 100%;
-
-        margin: 0px;
-}
-
 .hr-space {
     margin-bottom: 40px;
     margin-top: 40px;
 }
-
 .wallpaper {
-     height: 100%;
-     width: 100%;
-       background-repeat: repeat-y;
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat-y;
 }
-
 .text-smart {
     color: #00A4BA
 }
-
-.img-logo-topo{
+.img-logo-topo {
     width: 200px;
 }
-
 .img-logo {
     margin-bottom: 20px;
     margin-top: 30px;
 }
-
 .row-suporte {
     margin-top: 30px;
     margin-bottom: 15px;
 }
-
-
-
-
-
 </style>
