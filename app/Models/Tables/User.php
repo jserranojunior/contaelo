@@ -19,7 +19,7 @@ class User extends Model
 
     public $rules = [                
         'email'    => 'required|unique:users',
-        
+        'name' => 'required',
         'password'      => 'required',               
     ];
 }

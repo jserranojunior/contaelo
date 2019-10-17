@@ -20,18 +20,24 @@ class NewRegisterController extends Controller
         {       
             $data = $data->all();                       
             $messages = [
-                'email.required' => 'Email está vazio',
-                // 'cpf.required' => 'CPF está vazio',
-                // 'cpf.unique' => 'Já existe esse CPF cadastrado',
-                'email.unique' => 'Já existe esse EMAIL cadastrado',
+                'email.required' => 'Email está vazio',             
+                'email.unique' => 'Já existe esse e-mail cadastrado',
                 'password.required' => 'É necessario colocar a senha',
+                'name.required' => 'Preencha com o nome completo',
             ];                         
                 $validate = Validator::make($data, $this->Users->rules, $messages);
-                if($validate->fails()){               
+                if($validate->fails()){        
+                    $validateError = $validate->errors();
                     return response()->json([
-                        'message' => $validate->errors(),  
+                        'message' => 'Contem erros',  
+                        'erros' => $validateError,
                         'data' => '',              
-                    ]);
+                    ]); 
+
+                    // return response()->json([
+                    //     'message' => $validate->errors(),  
+                    //     'data' => '',              
+                    // ]);
                 }else{                    
                         $data['password'] = Hash::make($data['password']);                 
                     try{

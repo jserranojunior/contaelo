@@ -12,4 +12,5 @@ Route::group([
     'prefix' => 'users'
 ], function ($router) {
     Route::post('/register', 'Auth\NewRegisterController@create');
+    Route::post('/login', 'Auth\NewLoginController@login');
 });

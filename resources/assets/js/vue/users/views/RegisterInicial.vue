@@ -25,7 +25,9 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-4 text-center">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-4 text-center">
                 <div class="icon-social text-primary">
                     <a href="https://twitter.com/ContaElo" target="_blank">
                         <h3><i class="fab fa-twitter"></i></h3>
@@ -46,11 +48,16 @@
                     </a>
                 </div>
             </div>
+                </div>
+            </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <div class="icon-social text-white">
-                    <p>David Lira CEO</p>
+                    <a href="#">
+                    <img class="img-logo img-fluid" src="img/david-marca.png" alt="">
+                </a>
+                  
                 </div>
             </div>            
         </div>
