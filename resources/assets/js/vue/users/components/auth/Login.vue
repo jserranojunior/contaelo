@@ -9,9 +9,10 @@
             <div class="form-group">
                 <input type="password" class="form-control input-main-login" v-model="inputs.password" placeholder="Digite sua senha">
             </div>
-        </div>
+        </div>  
+    </div>
         <div v-if="message" class="row justify-content-center row-space-form">
-            <div class="col">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-4">
                 <div class="alert alert-danger" role="alert">
                 <ul>
                     <li >
@@ -19,8 +20,9 @@
                     </li>
                 </ul>
             </div>
+             </div>  
             </div>
-        </div>
+             <div class="row row-space justify-content-center">
         <div class="col-10 text-left">
             <div class="form-group">
                 <div class="row">                    
@@ -39,6 +41,7 @@
                 </div>
             </div>
         </div>
+             </div>
     </div>
 </div>
 </template>
