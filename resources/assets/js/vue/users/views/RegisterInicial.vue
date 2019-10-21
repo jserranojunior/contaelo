@@ -86,6 +86,7 @@ export default {
         }
     },    
     beforeMount() {
+        this.isMobile()
         document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')";
     },
     components:{

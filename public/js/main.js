@@ -17179,6 +17179,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
     beforeMount: function beforeMount() {
+        this.isMobile();
         document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')";
     },
 
