@@ -17076,7 +17076,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.img-david-ceo{\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    background-color: #00A4BA;\n  \n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n}\n.text-smart {\n    color: #00A4BA\n}\n.img-logo-topo {\n    width: 200px;\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 0px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n", ""]);
+exports.push([module.i, "\n.rem16{\n    font-size:1.7rem;\n}\n.rem1{\n    font-size: 1.20rem;\n}\n.img-david-ceo{\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    background-color: #00A4BA;\n  \n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n}\n.text-smart {\n    color: #00A4BA\n}\n.img-logo-topo {\n    width: 200px;\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 10px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n", ""]);
 
 // exports
 
@@ -17162,6 +17162,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -17169,7 +17173,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     name: "RegisterInicial",
     data: function data() {
         return {
-            bgImagem: ""
+            bgImagem: "",
+            mobile: false,
+            linkWhatsApp: "https://web.whatsapp.com/send?phone=5511998068930"
         };
     },
     beforeMount: function beforeMount() {
@@ -17179,6 +17185,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     components: {
         Register: __WEBPACK_IMPORTED_MODULE_0__components_auth_Register___default.a,
         Login: __WEBPACK_IMPORTED_MODULE_1__components_auth_Login___default.a
+    },
+    methods: {
+        isMobile: function isMobile() {
+            var userAgent = navigator.userAgent.toLowerCase();
+            if (userAgent.search(/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i) != -1) {
+
+                this.linkWhatsApp = "whatsapp://send?phone=5511998068930";
+            } else {
+                this.linkWhatsApp = "https://web.whatsapp.com/send?phone=5511998068930";
+            }
+        }
+
+        //  $isMobile = isMobile();
+
+        // $(document).ready(function(){
+        //   if($isMobile == true){  
+        //     $(".link-whatsapp").attr("href", "whatsapp://send?phone=5511998068930");         
+        //   }else{
+        //     $(".link-whatsapp").attr("href", "https://web.whatsapp.com/send?phone=5511998068930"); 
+        //   }
+        // });
+
     }
 });
 
@@ -18899,7 +18927,20 @@ var render = function() {
         _vm._v(" "),
         _vm._m(3),
         _vm._v(" "),
-        _vm._m(4)
+        _c("div", { staticClass: "row justify-content-center" }, [
+          _c("div", { staticClass: "col-4 text-center" }, [
+            _c(
+              "a",
+              {
+                staticClass: "link-whatsapp",
+                attrs: { href: _vm.linkWhatsApp }
+              },
+              [_vm._m(4)]
+            ),
+            _vm._v(" "),
+            _vm._m(5)
+          ])
+        ])
       ],
       1
     )
@@ -19010,20 +19051,30 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-12 text-center" }, [
-        _c("div", { staticClass: "btn" }, [
-          _c("span", { staticClass: "text-white" }, [_vm._v("(11)99806-8930")])
+    return _c(
+      "div",
+      { staticClass: "btn btn-link text-white font-weight-bold" },
+      [
+        _c("span", { staticClass: "rem16" }, [
+          _c("i", { staticClass: "fab fa-whatsapp text-success icon-social" })
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "icon-social text-white" }, [
-          _c("a", { attrs: { href: "#" } }, [
-            _c("img", {
-              staticClass: "img-logo img-fluid img-david-ceo",
-              attrs: { src: "img/david-marca.png", alt: "" }
-            })
-          ])
+        _c("span", { staticClass: "rem1 text-white" }, [
+          _vm._v("(11) 99806-8930")
         ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "icon-social text-white" }, [
+      _c("a", { attrs: { href: "#" } }, [
+        _c("img", {
+          staticClass: "img-logo img-fluid img-david-ceo",
+          attrs: { src: "img/david-marca.png", alt: "" }
+        })
       ])
     ])
   }

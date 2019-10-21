@@ -51,11 +51,15 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <div class="btn">
-                            <!-- <i class="fab fa-whatsapp text-success"></i> -->
-                            <span class="text-white">(11)99806-8930</span>
+            <div class="col-4 text-center">
+                    <a class="link-whatsapp" :href="linkWhatsApp">
+                      
+                <div class="btn btn-link text-white font-weight-bold">              
+                                                            <span class="rem16"> <i class="fab fa-whatsapp text-success icon-social"></i> </span>
+                             <span class="rem1 text-white">(11) 99806-8930</span>                          
+                                             
                         </div> 
+                         </a>
                 <div class="icon-social text-white">
                     <a href="#">
                     <img class="img-logo img-fluid img-david-ceo" src="img/david-marca.png" alt="">
@@ -76,7 +80,9 @@ export default {
     name: "RegisterInicial",
     data() {
         return {
-            bgImagem: ""
+            bgImagem: "",
+            mobile: false,
+            linkWhatsApp: "https://web.whatsapp.com/send?phone=5511998068930"
         }
     },    
     beforeMount() {
@@ -85,13 +91,42 @@ export default {
     components:{
         Register,
         Login,
+    },
+    methods:{
+         isMobile(){
+            var userAgent = navigator.userAgent.toLowerCase();
+            if( userAgent.search(/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i)!= -1 ){
+
+                this.linkWhatsApp = "whatsapp://send?phone=5511998068930"
+            }else{
+                this.linkWhatsApp = "https://web.whatsapp.com/send?phone=5511998068930"
+            }
+            }
+ 
+//  $isMobile = isMobile();
+
+// $(document).ready(function(){
+//   if($isMobile == true){  
+//     $(".link-whatsapp").attr("href", "whatsapp://send?phone=5511998068930");         
+//   }else{
+//     $(".link-whatsapp").attr("href", "https://web.whatsapp.com/send?phone=5511998068930"); 
+//   }
+// });
+
     }
 }
 </script>
 
 <style>
+.rem16{
+    font-size:1.7rem;
+}
+.rem1{
+    font-size: 1.20rem;
+}
 .img-david-ceo{
     max-width: 90px;
+
 }
 body,
 html {
@@ -118,7 +153,7 @@ html {
 }
 .img-logo {
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 .row-suporte {
     margin-top: 30px;
