@@ -77,7 +77,7 @@
  <script>
         function emitir(id){
     
- var $url = '../operacoes/smart/editar/' + id;
+ var $url = '/admin/operacoes/editar/' + id;
  
   window.location = $url;
  }

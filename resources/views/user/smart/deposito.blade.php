@@ -14,7 +14,7 @@
             <div class="body-box">
            
 
-           <form action="{{url('/smart/deposito/novo')}}" method="post" class="form-horizontal">
+           <form action="{{url('/deposito/novo')}}" method="post" class="form-horizontal">
              
               <div class="form-group ">
                 <label for="valor" class="col-lg-6 ">ELO VALOR</label>

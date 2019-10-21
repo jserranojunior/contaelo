@@ -25,7 +25,7 @@ class resgateController extends Controller
     public function create(Request $request){
         $dados = new Resgate();
         $dados = $dados->create($request);
-        return redirect('/smart/resgate');
+        return redirect('/resgate');
     }
 
 }

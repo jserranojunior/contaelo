@@ -28,7 +28,7 @@
                 <div class="row">                    
                         <div class="col-12 text-center">
                            
-                            <div class="btn  btn-outline-light font-weight-bold float-center" @click="Login()">ACESSE</div>                        
+                            <div class="btn  btn-outline-light font-weight-bold float-center" @click="Login()">FAZER LOGIN</div>                        
                     </div>
                 </div>
                 <div class="row">

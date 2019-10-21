@@ -17,7 +17,7 @@
             <div class="body-box">
                 
 
-           <form action="{{url('/smart/resgate/novo')}}" method="post" name="formresgate" id="formresgate" class="form-horizontal">
+           <form action="{{url('/resgate/novo')}}" method="post" name="formresgate" id="formresgate" class="form-horizontal">
              
               <div class="form-group ">
                 <label for="valor" class="col-lg-6 ">ELO</label>

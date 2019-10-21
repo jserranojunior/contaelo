@@ -17,14 +17,14 @@ class smartOperacoesController extends Controller
         $operacoes = new Operacoes();
         $operacoes = $operacoes->emitir($request);
 
-        return redirect('/admin/operacoes/smart');  
+        return redirect('/admin/operacoes');  
     }
 
     public function excluir(Request $request){
         $operacoes = new Operacoes();
         $operacoes = $operacoes->excluir($request->id);
 
-        return redirect('/admin/operacoes/smart');  
+        return redirect('/admin/operacoes');  
     }
 
 

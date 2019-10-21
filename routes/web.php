@@ -44,10 +44,10 @@ Route::group(['as' => 'admin.','prefix' => 'admin'],function(){
       Route::post('/operacoes/excluir', 'Admin\Operacoes\operacoesController@excluir')->name('admin.operacoes.excluir');
     
     /* OPERACOES SMART */
-    Route::get('/operacoes/smart', 'Admin\Operacoes\smartOperacoesController@index')->name('admin.operacoes.smart');
-    Route::any('/operacoes/smart/editar/{id}', 'Admin\Operacoes\smartOperacoesController@edit')->name('admin.operacoes.smart.edit');
-    Route::post('/operacoes/smart/emitir', 'Admin\Operacoes\smartOperacoesController@emitir')->name('admin.operacoes.smart.emitir');
-    Route::post('/operacoes/smart/excluir', 'Admin\Operacoes\smartOperacoesController@excluir')->name('admin.operacoes.smart.excluir');
+    Route::get('/operacoes', 'Admin\Operacoes\smartOperacoesController@index')->name('admin.operacoes.smart');
+    Route::any('/operacoes/editar/{id}', 'Admin\Operacoes\smartOperacoesController@edit')->name('admin.operacoes.smart.edit');
+    Route::post('/operacoes/emitir', 'Admin\Operacoes\smartOperacoesController@emitir')->name('admin.operacoes.smart.emitir');
+    Route::post('/operacoes/excluir', 'Admin\Operacoes\smartOperacoesController@excluir')->name('admin.operacoes.smart.excluir');
   
     /* OPERACOES ANALISE */
     Route::get('/analise', 'Admin\Analise\analiseController@index')->name('analise.index');
@@ -85,15 +85,15 @@ Route::group(['as' => 'usuario.', 'middleware' => ['auth:web']],function(){
 
   /* ############## SMART ########## */
     /* EXTRATO */
-    Route::get('/smart/extrato', 'User\Smart\extratoController@index'); 
+    Route::get('/extrato', 'User\Smart\extratoController@index'); 
     /* DEPOSITO */
-    Route::get('/smart/deposito', 'User\Smart\depositoController@index');
-    Route::post('/smart/deposito/novo', 'User\Smart\depositoController@create');
+    Route::get('/deposito', 'User\Smart\depositoController@index');
+    Route::post('/deposito/novo', 'User\Smart\depositoController@create');
     /* SALDO */  
-    Route::get('/smart/saldo', 'User\Smart\saldoController@index');
+    Route::get('/saldo', 'User\Smart\saldoController@index');
     /* RESGATE */
-    Route::get('/smart/resgate', 'User\Smart\resgateController@index');
-    Route::post('/smart/resgate/novo', 'User\Smart\resgateController@create');
+    Route::get('/resgate', 'User\Smart\resgateController@index');
+    Route::post('/resgate/novo', 'User\Smart\resgateController@create');
       /* ############## FIM SMART ########## */
 
     /* TRANSFERENCIAS */

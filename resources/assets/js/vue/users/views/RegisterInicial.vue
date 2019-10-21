@@ -6,17 +6,6 @@
                 <img class="img-logo-topo img-logo img-fluid" src="img/elo-logo.png" alt="">
             </div>
         </div>
-         <Login></Login>
-        <Register></Register>
-       <div class="row justify-content-center">
-            <div class="col-12 text-center">
-               <div class="icon-social text-primary">                    
-                        <h4><i class="fab fa-whatsapp text-success"></i>
-                            <span class="text-white">(11)99806-8930</span>
-                        </h4> 
-                </div>
-            </div>
-        </div>
         <div class="row justify-content-center">
             <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
                 <a href="#">
@@ -24,6 +13,9 @@
                 </a>
             </div>
         </div>
+         <Login></Login>
+        <Register></Register>      
+        
         <div class="row justify-content-center">
             <div class="col-4">
                 <div class="row">
@@ -53,9 +45,20 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12 text-center">
+               <div class="icon-social text-primary">                    
+                        
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="btn">
+                            <!-- <i class="fab fa-whatsapp text-success"></i> -->
+                            <span class="text-white">(11)99806-8930</span>
+                        </div> 
                 <div class="icon-social text-white">
                     <a href="#">
-                    <img class="img-logo img-fluid" src="img/david-marca.png" alt="">
+                    <img class="img-logo img-fluid img-david-ceo" src="img/david-marca.png" alt="">
                 </a>
                   
                 </div>
@@ -87,6 +90,9 @@ export default {
 </script>
 
 <style>
+.img-david-ceo{
+    max-width: 90px;
+}
 body,
 html {
     background-size: cover;
@@ -112,7 +118,7 @@ html {
 }
 .img-logo {
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 .row-suporte {
     margin-top: 30px;

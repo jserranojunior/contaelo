@@ -18,6 +18,6 @@ class depositoController extends Controller
     public function create(Request $request){
         $dados = new Deposito();
         $dados = $dados->create($request);
-        return redirect('/smart/deposito');
+        return redirect('/deposito');
     }
 }
