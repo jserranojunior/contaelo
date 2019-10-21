@@ -18928,7 +18928,7 @@ var render = function() {
         _vm._m(3),
         _vm._v(" "),
         _c("div", { staticClass: "row justify-content-center" }, [
-          _c("div", { staticClass: "col-4 text-center" }, [
+          _c("div", { staticClass: "col-12 text-center" }, [
             _c(
               "a",
               {

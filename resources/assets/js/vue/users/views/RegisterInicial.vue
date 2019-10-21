@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-4 text-center">
+            <div class="col-12 text-center">
                     <a class="link-whatsapp" :href="linkWhatsApp">
                       
                 <div class="btn btn-link text-white font-weight-bold">              
