@@ -30,4 +30,5 @@ var cpfMascara = function (val) {
 
     // FIM MASCARAS
 
-    
+   //  $('.bd-example-modal-lg').modal('show')
+   

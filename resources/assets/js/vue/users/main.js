@@ -11,7 +11,7 @@ import App from './components/layouts/App'
 
 const router = new VueRouter({
     routes
-})
+}) 
  
   
 Vue.use(VueRouter)

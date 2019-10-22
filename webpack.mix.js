@@ -8,17 +8,17 @@ mix.options({
   });
 
 
-// mix
-// .scripts([
-//     'resources/assets/js/jquery.js',
-//     'resources/assets/js/bootstrap.js',     
-//     'resources/assets/js/adminlte.js', 
-//     'resources/assets/js/internetexplore.js',
-//     'resources/assets/js/jquerymask.js',
-//     'resources/assets/js/funcoes.js',
+mix
+.scripts([
+    'resources/assets/js/jquery.js',
+    'resources/assets/js/bootstrap.js',     
+    'resources/assets/js/adminlte.js', 
+    'resources/assets/js/internetexplore.js',
+    'resources/assets/js/jquerymask.js',
+    'resources/assets/js/funcoes.js',
 
 
-// ],'js/all.js')
+],'js/all.js')
 
 
 // .styles([
