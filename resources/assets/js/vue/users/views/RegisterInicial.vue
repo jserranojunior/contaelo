@@ -13,16 +13,19 @@
         </div>
 
         <div class="row  justify-content-center">
-            <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-ja-tenho-conta">
-                <div class="btn btn-primary btn-log font-weight-bold">JA SOU CONTA ELO</div>
-            </div>
-            <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-quero-conta">
+            <router-link to="login">
+                <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-ja-tenho-conta">
+                    <div class="btn btn-primary btn-log font-weight-bold">JA SOU CONTA ELO</div>
+                </div>  
+            </router-link>
+            <router-link to="/register">
+                <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-quero-conta">
                 <div class="btn btn-primary btn-log font-weight-bold">QUERO SER CONTA ELO</div>
             </div>
+            </router-link>
         </div>
 
-        <!-- <Login></Login> -->
-        <!-- <Register></Register>       -->
+        
 
         <div class="row row-space justify-content-center">
             <div class="col-12 col-xs-12 col-sm-7 col-md-7 col-lg-7 col-ls-7">
@@ -106,8 +109,7 @@
 </template>
 
 <script>
-import Register from '../components/auth/Register'
-import Login from '../components/auth/Login'
+
 export default {
     name: "RegisterInicial",
     data() {
@@ -125,8 +127,8 @@ console.log(window.innerHeight)
         
     },
     components: {
-        Register,
-        Login,
+        // Register,
+        // Login,
     },
     methods: {
         isMobile() {

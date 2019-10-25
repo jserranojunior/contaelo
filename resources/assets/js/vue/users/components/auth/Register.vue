@@ -50,6 +50,15 @@
                         <div class="btn btn-outline-light font-weight-bold" @click="Cadastrar(inputs)">CADASTRAR</div>
                     </div>
                 </div>
+                <div class="row">                    
+                    <div class="col-12 text-center">
+                        <router-link to="/login">
+                            <a href="#">
+                            <button type="button" class="btn btn-link text-white text-left">Já sou Conta Elo</button>
+                        </a>
+                        </router-link>
+                    </div>
+                </div>
             </div>
              <div v-if="erros" class="row justify-content-center row-space-form">
             <div class="col">
@@ -107,6 +116,9 @@ export default {
         }
 
         this.inputs.celular = this.CodeCountry + this.phoneNumber
+
+          document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')";
+document.body.style.height = window.innerHeight;
     },
     watch: {
         CodeCountry() {

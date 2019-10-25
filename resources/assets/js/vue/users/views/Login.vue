@@ -1,28 +1,18 @@
 <template>
-    <div>
+    <div class="wallpaper">
         <div class="container">
             <div class="row justify-content-sm-center">
                 <div class="col-sm-12 text-center">
-                    <img class="img-logo img-fluid" src="img/logo-white-conta-smart.png" alt="">
+                   <router-link to="/">
+                        <img class="img-logo img-fluid" src="img/elo-logo-internacional.png" alt="">
                     <p class="font-weight-bold text-center text-white">BEM VINDO!</p>
                     <hr/>
+                   </router-link>
                 </div>
             </div>
-  
-             <RegisterComponent></RegisterComponent>  
+    
+            <LoginComponent></LoginComponent>
 
-                <hr class="hr-space"/>
-
-            
-             <LoginComponent></LoginComponent>
-
-        <hr class="hr-space"/>
-
-        <ReceberComponent></ReceberComponent>
-
-                <hr/>
-       
-            <Footer></Footer>         
         
         </div>
     </div>
@@ -30,26 +20,48 @@
 
 <script>
 import LoginComponent from '../components/auth/Login'
-import RegisterComponent from '../components/auth/Register'
-import ReceberComponent from '../components/auth/Receber'
-import Footer from '../components/layouts/Footer'
+// import RegisterComponent from '../components/auth/Register'
+// import ReceberComponent from '../components/auth/Receber'
+// import Footer from '../components/layouts/Footer'
 export default {
-    name: "Register",
+    name: "Login",
     components:{
         LoginComponent,
-        RegisterComponent,
-        ReceberComponent,
-        Footer,
+        // RegisterComponent,
+        // ReceberComponent, 
+        // Footer,
+    },
+    beforeMount() {
+        this.isMobile()
+        document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')";
+document.body.style.height = window.innerHeight;
+console.log(window.innerHeight)
+        
     }
 }
 </script>
 
 <style>
+.wallpaper {
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+
+    width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
 .hr-space{
     margin-bottom:40px;
     margin-top:40px;
 }
 body{
+
     background-color:#00A4BA
 }
 .img-logo {

@@ -32,11 +32,17 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 text-center">
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
                         <a href="/password/reset">
                             <button type="button" class="btn btn-link text-white text-left">Esqueci minha senha</button>
-
                         </a>
+                    </div>
+                    <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center">
+                        <router-link to="/register">
+                            <a href="#">
+                            <button type="button" class="btn btn-link text-white text-left">Ainda não sou Conta Elo</button>
+                        </a>
+                        </router-link>
                     </div>
                 </div>
             </div>
