@@ -1,76 +1,108 @@
 <template>
 <div class="wallpaper">
     <div class="container-fluid">
-        <div class="row justify-content-center">
+        <div class="row margin-topo justify-content-center">
+            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 col-xl-6 text-center">
+                <img class="img-logo-topo img-logo img-fluid img-responsive" src="img/elo-logo-internacional.png" alt="">
+            </div>
+        </div>
+        <div class="row row-space justify-content-center">
             <div class="col-12 text-center">
-                <img class="img-logo-topo img-logo img-fluid" src="img/elo-logo.png" alt="">
+                <h2 class="bem-vindo text-white">Seja Bem Vindo</h2>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center">
-                <a href="#">
-                    <img class="img-logo img-fluid" src="img/disponivel-googleplay.png" alt="">
-                </a>
+
+        <div class="row  justify-content-center">
+            <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-ja-tenho-conta">
+                <div class="btn btn-primary btn-log font-weight-bold">JA SOU CONTA ELO</div>
+            </div>
+            <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-quero-conta">
+                <div class="btn btn-primary btn-log font-weight-bold">QUERO SER CONTA ELO</div>
             </div>
         </div>
-         <Login></Login>
-        <Register></Register>      
-        
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-4 text-center">
-                <div class="icon-social text-primary">
-                    <a href="https://twitter.com/ContaElo" target="_blank">
-                        <h3><i class="fab fa-twitter"></i></h3>
-                    </a>
+
+        <!-- <Login></Login> -->
+        <!-- <Register></Register>       -->
+
+        <div class="row row-space justify-content-center">
+            <div class="col-7">
+
+                <div class="row justify-content-center">
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a href="#" target="_blank">
+                                <h5><i class="bg-white-social far fa-envelope"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
+                                <h5><i class="bg-white-social fab fa-facebook"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-danger">
+                            <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
+                                <h5><i class="bg-white-social fab fa-instagram"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a href="https://twitter.com/ContaElo" target="_blank">
+                                <h5><i class="bg-white-social fab fa-twitter"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a href="#" target="_blank">
+                                <h5><i class="bg-white-social far fa-paper-plane"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a target="_blank" :href="linkWhatsApp">
+                                <h5><i class="bg-white-social fab fa-whatsapp"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a href="#" target="_blank">
+
+                                <h5><i class="bg-white-social fas fa-map-marked-alt"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a href="#" target="_blank">
+                                <h5><i class="bg-white-social fas fa-file-invoice"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                        <div class="icon-social text-primary">
+                            <a href="#" target="_blank">
+                                <h5><i class="bg-white-social fab fa-google-play"></i></h5>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="col-4 text-center">
-                <div class="icon-social text-danger">
-                    <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
-                        <h3><i class="fab fa-instagram"></i></h3>
-                    </a>
-                </div>
-            </div>
-            <div class="col-4 text-center">
-                <div class="icon-social text-primary">
-                    <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
-                        <h3><i class="fab fa-facebook-f"></i></h3>
-                    </a>
-                </div>
-            </div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-               <div class="icon-social text-primary">                    
-                        
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                    <a class="link-whatsapp" :href="linkWhatsApp">
-                      
-                <div class="btn btn-link text-white font-weight-bold">              
-                                                            <span class="rem16"> <i class="fab fa-whatsapp text-success icon-social"></i> </span>
-                             <span class="rem1 text-white">(11) 99806-8930</span>                          
-                                             
-                        </div> 
-                         </a>
-                <div class="icon-social text-white">
-                    <a href="#">
-                    <img class="img-logo img-fluid img-david-ceo" src="img/david-marca.png" alt="">
-                </a>
-                  
-                </div>
-            </div>            
         </div>
     </div>
 </div>
-
 </template>
 
 <script>
@@ -84,80 +116,122 @@ export default {
             mobile: false,
             linkWhatsApp: "https://web.whatsapp.com/send?phone=5511998068930"
         }
-    },    
+    },
     beforeMount() {
         this.isMobile()
         document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')";
+document.body.style.height = window.innerHeight;
+console.log(window.innerHeight)
+        
     },
-    components:{
+    components: {
         Register,
         Login,
     },
-    methods:{
-         isMobile(){
+    methods: {
+        isMobile() {
             var userAgent = navigator.userAgent.toLowerCase();
-            if( userAgent.search(/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i)!= -1 ){
+            if (userAgent.search(/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i) != -1) {
 
                 this.linkWhatsApp = "whatsapp://send?phone=5511998068930"
-            }else{
+            } else {
                 this.linkWhatsApp = "https://web.whatsapp.com/send?phone=5511998068930"
             }
-            }
- 
-//  $isMobile = isMobile();
+        }
 
-// $(document).ready(function(){
-//   if($isMobile == true){  
-//     $(".link-whatsapp").attr("href", "whatsapp://send?phone=5511998068930");         
-//   }else{
-//     $(".link-whatsapp").attr("href", "https://web.whatsapp.com/send?phone=5511998068930"); 
-//   }
-// });
+        //  $isMobile = isMobile();
+
+        // $(document).ready(function(){
+        //   if($isMobile == true){  
+        //     $(".link-whatsapp").attr("href", "whatsapp://send?phone=5511998068930");         
+        //   }else{
+        //     $(".link-whatsapp").attr("href", "https://web.whatsapp.com/send?phone=5511998068930"); 
+        //   }
+        // });
 
     }
 }
 </script>
 
 <style>
-.rem16{
-    font-size:1.7rem;
+.btn-log{
+    margin-top:25px;
+    background-color:#00bcd5;
+    border-color: #00bcd5;
+    
 }
-.rem1{
+.col-ja-tenho-conta{
+    text-align: center;
+}   
+.col-quero-conta{
+    text-align: center;
+}
+.bg-white-social {
+    background-color:
+        white;
+
+    padding: 12px;
+
+    border-radius: 100%;
+    color: #006a94;
+}
+
+.rem16 {
+    font-size: 1.7rem;
+}
+
+.rem1 {
     font-size: 1.20rem;
 }
-.img-david-ceo{
+
+.img-david-ceo {
     max-width: 90px;
 
 }
+
 body,
 html {
     background-size: cover;
     background-repeat:repeat-y;
-    background-color: #00A4BA;
-  
+    /* background-color: #00A4BA;   */
+    background-repeat: repeat-x;
     margin: 0px;
 }
+
 .hr-space {
     margin-bottom: 40px;
     margin-top: 40px;
 }
+
 .wallpaper {
     height: 100%;
     width: 100%;
     background-repeat: repeat-y;
+    background-repeat: repeat-x;
 }
+
 .text-smart {
     color: #00A4BA
 }
-.img-logo-topo {
-    width: 200px;
-}
+
+
 .img-logo {
-    margin-bottom: 20px;
-    margin-top: 10px;
+  
+  
+    margin-top: 70px;
+
 }
+
 .row-suporte {
     margin-top: 30px;
     margin-bottom: 15px;
+}
+
+.margin-topo {
+    margin-top: 5px;
+}
+
+.row-space {
+    margin-top: 35px;
 }
 </style>

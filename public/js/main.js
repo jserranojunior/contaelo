@@ -17076,7 +17076,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.rem16{\n    font-size:1.7rem;\n}\n.rem1{\n    font-size: 1.20rem;\n}\n.img-david-ceo{\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    background-color: #00A4BA;\n  \n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n}\n.text-smart {\n    color: #00A4BA\n}\n.img-logo-topo {\n    width: 200px;\n}\n.img-logo {\n    margin-bottom: 20px;\n    margin-top: 10px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n", ""]);
+exports.push([module.i, "\n.btn-log{\n    margin-top:25px;\n    background-color:#00bcd5;\n    border-color: #00bcd5;\n}\n.col-ja-tenho-conta{\n    text-align: center;\n}\n.col-quero-conta{\n    text-align: center;\n}\n.bg-white-social {\n    background-color:\n        white;\n\n    padding: 12px;\n\n    border-radius: 100%;\n    color: #006a94;\n}\n.rem16 {\n    font-size: 1.7rem;\n}\n.rem1 {\n    font-size: 1.20rem;\n}\n.img-david-ceo {\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    /* background-color: #00A4BA;   */\n    background-repeat: repeat-x;\n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n    background-repeat: repeat-x;\n}\n.text-smart {\n    color: #00A4BA\n}\n.img-logo {\n  \n  \n    margin-top: 70px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n.margin-topo {\n    margin-top: 5px;\n}\n.row-space {\n    margin-top: 35px;\n}\n", ""]);
 
 // exports
 
@@ -17091,6 +17091,38 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_auth_Register___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_auth_Register__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_auth_Login__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_auth_Login___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_auth_Login__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -17181,6 +17213,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     beforeMount: function beforeMount() {
         this.isMobile();
         document.body.style.backgroundImage = "url('img" + "/bg-conta-elo.png')";
+        document.body.style.height = window.innerHeight;
+        console.log(window.innerHeight);
     },
 
     components: {
@@ -18912,39 +18946,52 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "wallpaper" }, [
-    _c(
-      "div",
-      { staticClass: "container-fluid" },
-      [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c("Login"),
-        _vm._v(" "),
-        _c("Register"),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _c("div", { staticClass: "row justify-content-center" }, [
-          _c("div", { staticClass: "col-12 text-center" }, [
+    _c("div", { staticClass: "container-fluid" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _vm._m(2),
+      _vm._v(" "),
+      _c("div", { staticClass: "row row-space justify-content-center" }, [
+        _c("div", { staticClass: "col-7" }, [
+          _c("div", { staticClass: "row justify-content-center" }, [
+            _vm._m(3),
+            _vm._v(" "),
+            _vm._m(4),
+            _vm._v(" "),
+            _vm._m(5),
+            _vm._v(" "),
+            _vm._m(6),
+            _vm._v(" "),
+            _vm._m(7),
+            _vm._v(" "),
             _c(
-              "a",
+              "div",
               {
-                staticClass: "link-whatsapp",
-                attrs: { href: _vm.linkWhatsApp }
+                staticClass:
+                  "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center"
               },
-              [_vm._m(4)]
+              [
+                _c("div", { staticClass: "icon-social text-primary" }, [
+                  _c(
+                    "a",
+                    { attrs: { target: "_blank", href: _vm.linkWhatsApp } },
+                    [_vm._m(8)]
+                  )
+                ])
+              ]
             ),
             _vm._v(" "),
-            _vm._m(5)
+            _vm._m(9),
+            _vm._v(" "),
+            _vm._m(10),
+            _vm._v(" "),
+            _vm._m(11)
           ])
         ])
-      ],
-      1
-    )
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -18952,12 +18999,35 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
+    return _c(
+      "div",
+      { staticClass: "row margin-topo justify-content-center" },
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "col-xs-12 col-sm-8 col-md-6 col-lg-6 col-xl-6 text-center"
+          },
+          [
+            _c("img", {
+              staticClass: "img-logo-topo img-logo img-fluid img-responsive",
+              attrs: { src: "img/elo-logo-internacional.png", alt: "" }
+            })
+          ]
+        )
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row row-space justify-content-center" }, [
       _c("div", { staticClass: "col-12 text-center" }, [
-        _c("img", {
-          staticClass: "img-logo-topo img-logo img-fluid",
-          attrs: { src: "img/elo-logo.png", alt: "" }
-        })
+        _c("h2", { staticClass: "bem-vindo text-white" }, [
+          _vm._v("Seja Bem Vindo")
+        ])
       ])
     ])
   },
@@ -18965,19 +19035,30 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
+    return _c("div", { staticClass: "row  justify-content-center" }, [
       _c(
         "div",
         {
-          staticClass: "col-6 col-xs-6 col-sm-4 col-md-2 col-lg-2 text-center"
+          staticClass: "col-12 col-xs-4 col-sm-8  col-md-3 col-ja-tenho-conta"
         },
         [
-          _c("a", { attrs: { href: "#" } }, [
-            _c("img", {
-              staticClass: "img-logo img-fluid",
-              attrs: { src: "img/disponivel-googleplay.png", alt: "" }
-            })
-          ])
+          _c(
+            "div",
+            { staticClass: "btn btn-primary btn-log font-weight-bold" },
+            [_vm._v("JA SOU CONTA ELO")]
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "col-12 col-xs-4 col-sm-8  col-md-3 col-quero-conta" },
+        [
+          _c(
+            "div",
+            { staticClass: "btn btn-primary btn-log font-weight-bold" },
+            [_vm._v("QUERO SER CONTA ELO")]
+          )
         ]
       )
     ])
@@ -18986,82 +19067,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-4" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-4 text-center" }, [
-            _c("div", { staticClass: "icon-social text-primary" }, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://twitter.com/ContaElo",
-                    target: "_blank"
-                  }
-                },
-                [_c("h3", [_c("i", { staticClass: "fab fa-twitter" })])]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-4 text-center" }, [
-            _c("div", { staticClass: "icon-social text-danger" }, [
-              _c(
-                "a",
-                {
-                  staticClass: "text-danger",
-                  attrs: {
-                    href: "https://www.instagram.com/contaelo/",
-                    target: "_blank"
-                  }
-                },
-                [_c("h3", [_c("i", { staticClass: "fab fa-instagram" })])]
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-4 text-center" }, [
-            _c("div", { staticClass: "icon-social text-primary" }, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "https://www.facebook.com/contaelooficial/",
-                    target: "_blank"
-                  }
-                },
-                [_c("h3", [_c("i", { staticClass: "fab fa-facebook-f" })])]
-              )
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row justify-content-center" }, [
-      _c("div", { staticClass: "col-12 text-center" }, [
-        _c("div", { staticClass: "icon-social text-primary" })
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "btn btn-link text-white font-weight-bold" },
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
-        _c("span", { staticClass: "rem16" }, [
-          _c("i", { staticClass: "fab fa-whatsapp text-success icon-social" })
-        ]),
-        _vm._v(" "),
-        _c("span", { staticClass: "rem1 text-white" }, [
-          _vm._v("(11) 99806-8930")
+        _c("div", { staticClass: "icon-social text-primary" }, [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("h5", [
+              _c("i", { staticClass: "bg-white-social far fa-envelope" })
+            ])
+          ])
         ])
       ]
     )
@@ -19070,14 +19085,160 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "icon-social text-white" }, [
-      _c("a", { attrs: { href: "#" } }, [
-        _c("img", {
-          staticClass: "img-logo img-fluid img-david-ceo",
-          attrs: { src: "img/david-marca.png", alt: "" }
-        })
-      ])
+    return _c(
+      "div",
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      [
+        _c("div", { staticClass: "icon-social text-primary" }, [
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.facebook.com/contaelooficial/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("h5", [
+                _c("i", { staticClass: "bg-white-social fab fa-facebook" })
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      [
+        _c("div", { staticClass: "icon-social text-danger" }, [
+          _c(
+            "a",
+            {
+              staticClass: "text-danger",
+              attrs: {
+                href: "https://www.instagram.com/contaelo/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("h5", [
+                _c("i", { staticClass: "bg-white-social fab fa-instagram" })
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      [
+        _c("div", { staticClass: "icon-social text-primary" }, [
+          _c(
+            "a",
+            {
+              attrs: { href: "https://twitter.com/ContaElo", target: "_blank" }
+            },
+            [
+              _c("h5", [
+                _c("i", { staticClass: "bg-white-social fab fa-twitter" })
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      [
+        _c("div", { staticClass: "icon-social text-primary" }, [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("h5", [
+              _c("i", { staticClass: "bg-white-social far fa-paper-plane" })
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h5", [
+      _c("i", { staticClass: "bg-white-social fab fa-whatsapp" })
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      [
+        _c("div", { staticClass: "icon-social text-primary" }, [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("h5", [
+              _c("i", { staticClass: "bg-white-social fas fa-map-marked-alt" })
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      [
+        _c("div", { staticClass: "icon-social text-primary" }, [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("h5", [
+              _c("i", { staticClass: "bg-white-social fas fa-file-invoice" })
+            ])
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      [
+        _c("div", { staticClass: "icon-social text-primary" }, [
+          _c("a", { attrs: { href: "#", target: "_blank" } }, [
+            _c("h5", [
+              _c("i", { staticClass: "bg-white-social fab fa-google-play" })
+            ])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
