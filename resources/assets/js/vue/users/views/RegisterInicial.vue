@@ -8,7 +8,7 @@
         </div>
         <div class="row row-space justify-content-center">
             <div class="col-12 text-center">
-                <h2 class="bem-vindo text-white">Seja Bem Vindo</h2>
+                <h2 class="bem-vindo text-white font-weight-bold text-decoration">Seja Bem Vindo</h2>
             </div>
         </div>
 
@@ -28,21 +28,21 @@
             <div class="col-7">
 
                 <div class="row justify-content-center">
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-envelope"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
                                 <h5><i class="bg-white-social fab fa-facebook"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-danger">
                             <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
                                 <h5><i class="bg-white-social fab fa-instagram"></i></h5>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="https://twitter.com/ContaElo" target="_blank">
                                 <h5><i class="bg-white-social fab fa-twitter"></i></h5>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-paper-plane"></i></h5>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a target="_blank" :href="linkWhatsApp">
                                 <h5><i class="bg-white-social fab fa-whatsapp"></i></h5>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
 
@@ -82,7 +82,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fas fa-file-invoice"></i></h5>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fab fa-google-play"></i></h5>
@@ -154,6 +154,9 @@ console.log(window.innerHeight)
 </script>
 
 <style>
+.bem-vindo{
+    text-decoration: underline;
+}
 .btn-log{
     margin-top:25px;
     background-color:#00bcd5;
@@ -208,6 +211,13 @@ html {
     width: 100%;
     background-repeat: repeat-y;
     background-repeat: repeat-x;
+
+    width: 100vw;
+height: 100vh;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
 }
 
 .text-smart {
@@ -215,23 +225,15 @@ html {
 }
 
 
-.img-logo {
-  
-  
-    margin-top: 70px;
 
-}
 
 .row-suporte {
     margin-top: 30px;
     margin-bottom: 15px;
 }
 
-.margin-topo {
-    margin-top: 5px;
-}
 
 .row-space {
-    margin-top: 35px;
+    margin-top: 40px;
 }
 </style>

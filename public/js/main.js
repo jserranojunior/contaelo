@@ -17076,7 +17076,7 @@ exports = module.exports = __webpack_require__(3)(false);
 
 
 // module
-exports.push([module.i, "\n.btn-log{\n    margin-top:25px;\n    background-color:#00bcd5;\n    border-color: #00bcd5;\n}\n.col-ja-tenho-conta{\n    text-align: center;\n}\n.col-quero-conta{\n    text-align: center;\n}\n.bg-white-social {\n    background-color:\n        white;\n\n    padding: 12px;\n\n    border-radius: 100%;\n    color: #006a94;\n}\n.rem16 {\n    font-size: 1.7rem;\n}\n.rem1 {\n    font-size: 1.20rem;\n}\n.img-david-ceo {\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    /* background-color: #00A4BA;   */\n    background-repeat: repeat-x;\n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n    background-repeat: repeat-x;\n}\n.text-smart {\n    color: #00A4BA\n}\n.img-logo {\n  \n  \n    margin-top: 70px;\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n.margin-topo {\n    margin-top: 5px;\n}\n.row-space {\n    margin-top: 35px;\n}\n", ""]);
+exports.push([module.i, "\n.bem-vindo{\n    text-decoration: underline;\n}\n.btn-log{\n    margin-top:25px;\n    background-color:#00bcd5;\n    border-color: #00bcd5;\n}\n.col-ja-tenho-conta{\n    text-align: center;\n}\n.col-quero-conta{\n    text-align: center;\n}\n.bg-white-social {\n    background-color:\n        white;\n\n    padding: 12px;\n\n    border-radius: 100%;\n    color: #006a94;\n}\n.rem16 {\n    font-size: 1.7rem;\n}\n.rem1 {\n    font-size: 1.20rem;\n}\n.img-david-ceo {\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    /* background-color: #00A4BA;   */\n    background-repeat: repeat-x;\n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n    background-repeat: repeat-x;\n\n    width: 100vw;\nheight: 100vh;\ndisplay: flex;\nflex-direction: row;\njustify-content: center;\nalign-items: center;\n}\n.text-smart {\n    color: #00A4BA\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n.row-space {\n    margin-top: 40px;\n}\n", ""]);
 
 // exports
 
@@ -18970,7 +18970,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center"
+                  "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center"
               },
               [
                 _c("div", { staticClass: "icon-social text-primary" }, [
@@ -19025,9 +19025,13 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row row-space justify-content-center" }, [
       _c("div", { staticClass: "col-12 text-center" }, [
-        _c("h2", { staticClass: "bem-vindo text-white" }, [
-          _vm._v("Seja Bem Vindo")
-        ])
+        _c(
+          "h2",
+          {
+            staticClass: "bem-vindo text-white font-weight-bold text-decoration"
+          },
+          [_vm._v("Seja Bem Vindo")]
+        )
       ])
     ])
   },
@@ -19069,7 +19073,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19087,7 +19091,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c(
@@ -19114,7 +19118,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-danger" }, [
           _c(
@@ -19142,7 +19146,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c(
@@ -19166,7 +19170,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19192,7 +19196,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19210,7 +19214,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19228,7 +19232,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-4 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
