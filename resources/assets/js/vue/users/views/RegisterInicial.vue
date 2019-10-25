@@ -25,24 +25,24 @@
         <!-- <Register></Register>       -->
 
         <div class="row row-space justify-content-center">
-            <div class="col-7">
+            <div class="col-12 col-xs-12 col-sm-7 col-md-7 col-lg-7 col-ls-7">
 
                 <div class="row justify-content-center">
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-envelope"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
                                 <h5><i class="bg-white-social fab fa-facebook"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-danger">
                             <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
                                 <h5><i class="bg-white-social fab fa-instagram"></i></h5>
@@ -50,7 +50,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="https://twitter.com/ContaElo" target="_blank">
                                 <h5><i class="bg-white-social fab fa-twitter"></i></h5>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-paper-plane"></i></h5>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a target="_blank" :href="linkWhatsApp">
                                 <h5><i class="bg-white-social fab fa-whatsapp"></i></h5>
@@ -74,7 +74,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
 
@@ -82,7 +82,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fas fa-file-invoice"></i></h5>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
 
-                    <div class="col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fab fa-google-play"></i></h5>

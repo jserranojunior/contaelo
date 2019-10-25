@@ -18954,42 +18954,48 @@ var render = function() {
       _vm._m(2),
       _vm._v(" "),
       _c("div", { staticClass: "row row-space justify-content-center" }, [
-        _c("div", { staticClass: "col-7" }, [
-          _c("div", { staticClass: "row justify-content-center" }, [
-            _vm._m(3),
-            _vm._v(" "),
-            _vm._m(4),
-            _vm._v(" "),
-            _vm._m(5),
-            _vm._v(" "),
-            _vm._m(6),
-            _vm._v(" "),
-            _vm._m(7),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center"
-              },
-              [
-                _c("div", { staticClass: "icon-social text-primary" }, [
-                  _c(
-                    "a",
-                    { attrs: { target: "_blank", href: _vm.linkWhatsApp } },
-                    [_vm._m(8)]
-                  )
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _vm._m(9),
-            _vm._v(" "),
-            _vm._m(10),
-            _vm._v(" "),
-            _vm._m(11)
-          ])
-        ])
+        _c(
+          "div",
+          {
+            staticClass: "col-12 col-xs-12 col-sm-7 col-md-7 col-lg-7 col-ls-7"
+          },
+          [
+            _c("div", { staticClass: "row justify-content-center" }, [
+              _vm._m(3),
+              _vm._v(" "),
+              _vm._m(4),
+              _vm._v(" "),
+              _vm._m(5),
+              _vm._v(" "),
+              _vm._m(6),
+              _vm._v(" "),
+              _vm._m(7),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center"
+                },
+                [
+                  _c("div", { staticClass: "icon-social text-primary" }, [
+                    _c(
+                      "a",
+                      { attrs: { target: "_blank", href: _vm.linkWhatsApp } },
+                      [_vm._m(8)]
+                    )
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _vm._m(9),
+              _vm._v(" "),
+              _vm._m(10),
+              _vm._v(" "),
+              _vm._m(11)
+            ])
+          ]
+        )
       ])
     ])
   ])
@@ -19073,7 +19079,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19091,7 +19097,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c(
@@ -19118,7 +19124,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-danger" }, [
           _c(
@@ -19146,7 +19152,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c(
@@ -19170,7 +19176,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19196,7 +19202,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19214,7 +19220,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
@@ -19232,7 +19238,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-3 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
+      { staticClass: "col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center" },
       [
         _c("div", { staticClass: "icon-social text-primary" }, [
           _c("a", { attrs: { href: "#", target: "_blank" } }, [
