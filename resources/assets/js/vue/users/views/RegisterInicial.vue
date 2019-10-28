@@ -2,7 +2,7 @@
 <div class="wallpaper">
     <div class="container-fluid">
         <div class="row margin-topo justify-content-center">
-            <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 col-xl-6 text-center">
+            <div class="col-12 col-xs-12 col-sm-10 col-md-8 col-lg-6  text-center">
                 <img class="img-logo-topo img-logo img-fluid img-responsive" src="img/elo-logo-internacional.png" alt="">
             </div>
         </div>
@@ -12,40 +12,43 @@
             </div>
         </div>
 
-        <div class="row  justify-content-center">
-            <router-link to="login">
-                <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-ja-tenho-conta">
-                    <div class="btn btn-primary btn-log font-weight-bold">JA SOU CONTA ELO</div>
-                </div>  
-            </router-link>
-            <router-link to="/register">
-                <div class="col-12 col-xs-4 col-sm-8  col-md-3 col-quero-conta">
-                <div class="btn btn-primary btn-log font-weight-bold">QUERO SER CONTA ELO</div>
+        <div class="row  row-space  justify-content-center">
+            
+                <div class="col-12 col-xs-6 col-sm-5  col-md-4 col-lg-3 col-ja-tenho-conta">
+                    <router-link to="login">
+                    <div class="btn btn-outline-light font-weight-bold">JA SOU CONTA ELO</div>
+                     </router-link>
+                </div>            
+            
+                <div class="col-12 col-xs-6 col-sm-5  col-md-4 col-lg-3 col-quero-conta">
+                    <router-link to="/register">
+                <div class="btn btn-outline-light font-weight-bold">QUERO SER CONTA ELO</div>
+                   </router-link>
             </div>
-            </router-link>
+         
         </div>
 
         
 
         <div class="row row-space justify-content-center">
-            <div class="col-12 col-xs-12 col-sm-7 col-md-7 col-lg-7 col-ls-7">
+            <div class="col-12 col-xs-12 col-sm-10 col-md-8 col-lg-6">
 
-                <div class="row justify-content-center">
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                <div class="row">
+                    <div class="col col-icon">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-envelope"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
                                 <h5><i class="bg-white-social fab fa-facebook"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-danger">
                             <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
                                 <h5><i class="bg-white-social fab fa-instagram"></i></h5>
@@ -53,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="https://twitter.com/ContaElo" target="_blank">
                                 <h5><i class="bg-white-social fab fa-twitter"></i></h5>
@@ -61,7 +64,7 @@
                         </div>
                     </div>
 
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-paper-plane"></i></h5>
@@ -69,7 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-primary">
                             <a target="_blank" :href="linkWhatsApp">
                                 <h5><i class="bg-white-social fab fa-whatsapp"></i></h5>
@@ -77,7 +80,7 @@
                         </div>
                     </div>
 
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
 
@@ -85,7 +88,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fas fa-file-invoice"></i></h5>
@@ -93,7 +96,7 @@
                         </div>
                     </div>
 
-                    <div class="col-2 col-xs-3 col-sm-2 col-md-2 col-lg-1 text-center">
+                    <div class="col col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fab fa-google-play"></i></h5>
@@ -165,12 +168,23 @@ console.log(window.innerHeight)
     border-color: #00bcd5;
     
 }
-.col-ja-tenho-conta{
-    text-align: center;
-}   
-.col-quero-conta{
-    text-align: center;
+
+.col-ja-tenho-conta {
+    float: left;
+    text-align: left;
 }
+.col-quero-conta {
+    float: right;
+    text-align: right;
+}
+
+.row-botoes-conta{
+    margin-top:17px;
+}
+
+
+
+
 .bg-white-social {
     background-color:
         white;
@@ -238,4 +252,19 @@ align-items: center;
 .row-space {
     margin-top: 40px;
 }
+
+@media (max-width: 575px) { 
+    .col-ja-tenho-conta{
+    text-align: center;
+}   
+
+
+.col-quero-conta{
+    text-align: center;
+    margin-top:10px;
+}
+
+ }
+
+
 </style>
