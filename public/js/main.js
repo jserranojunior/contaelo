@@ -18693,7 +18693,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.bem-vindo{\n    text-decoration: underline;\n}\n.btn-log{\n    margin-top:25px;\n    background-color:#00bcd5;\n    border-color: #00bcd5;\n}\n.col-ja-tenho-conta {\n    float: left;\n    text-align: left;\n}\n.col-quero-conta {\n    float: right;\n    text-align: right;\n}\n.row-botoes-conta{\n    margin-top:17px;\n}\n.bg-white-social {\n    background-color:\n        white;\n\n    padding: 12px;\n\n    border-radius: 100%;\n    color: #006a94;\n}\n.rem16 {\n    font-size: 1.7rem;\n}\n.rem1 {\n    font-size: 1.20rem;\n}\n.img-david-ceo {\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    /* background-color: #00A4BA;   */\n    background-repeat: repeat-x;\n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n    background-repeat: repeat-x;\n\n    width: 100vw;\nheight: 100vh;\ndisplay: flex;\nflex-direction: row;\njustify-content: center;\nalign-items: center;\n}\n.text-smart {\n    color: #00A4BA\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n.row-space {\n    margin-top: 40px;\n}\n@media (max-width: 575px) {\n.col-ja-tenho-conta{\n    text-align: center;\n}\n.col-quero-conta{\n    text-align: center;\n    margin-top:10px;\n}\n}\n\n\n", ""]);
+exports.push([module.i, "\n.btn-login-register {\n    width: 100%;\n}\n.bem-vindo{\n    text-decoration: underline;\n}\n.btn-log{\n    margin-top:25px;\n    background-color:#00bcd5;\n    border-color: #00bcd5;\n}\n.col-ja-tenho-conta {\n    float: left;\n    text-align: left;\n}\n.col-quero-conta {\n    float: right;\n    text-align: right;\n}\n.row-botoes-conta{\n    margin-top:17px;\n}\n.bg-white-social {\n    background-color:\n        white;\n\n    padding: 12px;\n\n    border-radius: 100%;\n    color: #006a94;\n}\n.rem16 {\n    font-size: 1.7rem;\n}\n.rem1 {\n    font-size: 1.20rem;\n}\n.img-david-ceo {\n    max-width: 90px;\n}\nbody,\nhtml {\n    background-size: cover;\n    background-repeat:repeat-y;\n    /* background-color: #00A4BA;   */\n    background-repeat: repeat-x;\n    margin: 0px;\n}\n.hr-space {\n    margin-bottom: 40px;\n    margin-top: 40px;\n}\n.wallpaper {\n    height: 100%;\n    width: 100%;\n    background-repeat: repeat-y;\n    background-repeat: repeat-x;\n\n    width: 100vw;\nheight: 100vh;\ndisplay: flex;\nflex-direction: row;\njustify-content: center;\nalign-items: center;\n}\n.text-smart {\n    color: #00A4BA\n}\n.row-suporte {\n    margin-top: 30px;\n    margin-bottom: 15px;\n}\n.row-space {\n    margin-top: 100px;\n}\n@media (max-width: 575px) {\n.col-ja-tenho-conta{\n    text-align: center;\n}\n.col-quero-conta{\n    text-align: center;\n    margin-top:10px;\n}\n}\n\n\n", ""]);
 
 // exports
 
@@ -18704,11 +18704,6 @@ exports.push([module.i, "\n.bem-vindo{\n    text-decoration: underline;\n}\n.btn
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-//
 //
 //
 //
@@ -18875,8 +18870,6 @@ var render = function() {
     _c("div", { staticClass: "container-fluid" }, [
       _vm._m(0),
       _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
       _c("div", { staticClass: "row  row-space  justify-content-center" }, [
         _c(
           "div",
@@ -18888,7 +18881,10 @@ var render = function() {
             _c("router-link", { attrs: { to: "login" } }, [
               _c(
                 "div",
-                { staticClass: "btn btn-outline-light font-weight-bold" },
+                {
+                  staticClass:
+                    "btn btn-outline-light btn-login-register font-weight-bold"
+                },
                 [_vm._v("JA SOU CONTA ELO")]
               )
             ])
@@ -18906,7 +18902,10 @@ var render = function() {
             _c("router-link", { attrs: { to: "/register" } }, [
               _c(
                 "div",
-                { staticClass: "btn btn-outline-light font-weight-bold" },
+                {
+                  staticClass:
+                    "btn btn-outline-light btn-login-register font-weight-bold"
+                },
                 [_vm._v("QUERO SER CONTA ELO")]
               )
             ])
@@ -18921,6 +18920,8 @@ var render = function() {
           { staticClass: "col-12 col-xs-12 col-sm-10 col-md-8 col-lg-6" },
           [
             _c("div", { staticClass: "row" }, [
+              _vm._m(1),
+              _vm._v(" "),
               _vm._m(2),
               _vm._v(" "),
               _vm._m(3),
@@ -18929,23 +18930,21 @@ var render = function() {
               _vm._v(" "),
               _vm._m(5),
               _vm._v(" "),
-              _vm._m(6),
-              _vm._v(" "),
               _c("div", { staticClass: "col col-icon text-center" }, [
                 _c("div", { staticClass: "icon-social text-primary" }, [
                   _c(
                     "a",
                     { attrs: { target: "_blank", href: _vm.linkWhatsApp } },
-                    [_vm._m(7)]
+                    [_vm._m(6)]
                   )
                 ])
               ]),
               _vm._v(" "),
+              _vm._m(7),
+              _vm._v(" "),
               _vm._m(8),
               _vm._v(" "),
-              _vm._m(9),
-              _vm._v(" "),
-              _vm._m(10)
+              _vm._m(9)
             ])
           ]
         )
@@ -18977,22 +18976,6 @@ var staticRenderFns = [
         )
       ]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row row-space justify-content-center" }, [
-      _c("div", { staticClass: "col-12 text-center" }, [
-        _c(
-          "h2",
-          {
-            staticClass: "bem-vindo text-white font-weight-bold text-decoration"
-          },
-          [_vm._v("Seja Bem Vindo")]
-        )
-      ])
-    ])
   },
   function() {
     var _vm = this

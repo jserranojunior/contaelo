@@ -6,29 +6,24 @@
                 <img class="img-logo-topo img-logo img-fluid img-responsive" src="img/elo-logo-internacional.png" alt="">
             </div>
         </div>
-        <div class="row row-space justify-content-center">
+        <!-- <div class="row row-space justify-content-center">
             <div class="col-12 text-center">
                 <h2 class="bem-vindo text-white font-weight-bold text-decoration">Seja Bem Vindo</h2>
             </div>
-        </div>
+        </div> -->
 
-        <div class="row  row-space  justify-content-center">
-            
+        <div class="row  row-space  justify-content-center">            
                 <div class="col-12 col-xs-6 col-sm-5  col-md-4 col-lg-3 col-ja-tenho-conta">
                     <router-link to="login">
-                    <div class="btn btn-outline-light font-weight-bold">JA SOU CONTA ELO</div>
+                    <div class="btn btn-outline-light btn-login-register font-weight-bold">JA SOU CONTA ELO</div>
                      </router-link>
-                </div>            
-            
+                </div>                        
                 <div class="col-12 col-xs-6 col-sm-5  col-md-4 col-lg-3 col-quero-conta">
                     <router-link to="/register">
-                <div class="btn btn-outline-light font-weight-bold">QUERO SER CONTA ELO</div>
+                <div class="btn btn-outline-light btn-login-register font-weight-bold">QUERO SER CONTA ELO</div>
                    </router-link>
-            </div>
-         
-        </div>
-
-        
+            </div>         
+        </div>       
 
         <div class="row row-space justify-content-center">
             <div class="col-12 col-xs-12 col-sm-10 col-md-8 col-lg-6">
@@ -159,6 +154,9 @@ console.log(window.innerHeight)
 </script>
 
 <style>
+.btn-login-register {
+    width: 100%;
+}
 .bem-vindo{
     text-decoration: underline;
 }
@@ -250,7 +248,7 @@ align-items: center;
 
 
 .row-space {
-    margin-top: 40px;
+    margin-top: 100px;
 }
 
 @media (max-width: 575px) { 
