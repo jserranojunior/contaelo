@@ -29,21 +29,21 @@
             <div class="col-12 col-xs-12 col-sm-10 col-md-8 col-lg-6">
 
                 <div class="row">
-                    <div class="col col-icon">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-left">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-envelope"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="https://www.facebook.com/contaelooficial/" target="_blank" class="">
                                 <h5><i class="bg-white-social fab fa-facebook"></i></h5>
                             </a>
                         </div>
                     </div>
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-right">
                         <div class="icon-social text-danger">
                             <a href="https://www.instagram.com/contaelo/" target="_blank" class="text-danger">
                                 <h5><i class="bg-white-social fab fa-instagram"></i></h5>
@@ -51,7 +51,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-left">
                         <div class="icon-social text-primary">
                             <a href="https://twitter.com/ContaElo" target="_blank">
                                 <h5><i class="bg-white-social fab fa-twitter"></i></h5>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social far fa-paper-plane"></i></h5>
@@ -67,7 +67,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-right">
                         <div class="icon-social text-primary">
                             <a target="_blank" :href="linkWhatsApp">
                                 <h5><i class="bg-white-social fab fa-whatsapp"></i></h5>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-left">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
 
@@ -83,7 +83,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-center">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fas fa-file-invoice"></i></h5>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="col col-icon text-center">
+                    <div class="col-4 col-xs-4 col-sm-4  col-md-1 col-lg-1 col-icon text-right">
                         <div class="icon-social text-primary">
                             <a href="#" target="_blank">
                                 <h5><i class="bg-white-social fab fa-google-play"></i></h5>
@@ -263,6 +263,9 @@ align-items: center;
 }
 
  }
+ .col-icon {
+    margin-right: auto;
+}
 
 
 </style>
