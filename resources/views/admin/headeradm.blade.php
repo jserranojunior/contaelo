@@ -100,7 +100,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <li class=""><a href="{{URL('/admin')}}"><i class="fa fa-home"></i> <span>INÍCIO</span></a></li>
         <li><a href="{{URL('admin/clientes')}}"><i class="fa fa-users"></i> <span>CLIENTES</span></a></li>
         <li><a href="{{URL('admin/operacoes')}}"><i class="fa fa-users"></i> <span>OPERAÇÔES</span></a></li>
-        
+        <li><a href="{{URL('admin/portalsaude')}}"><i class="fa fa-heartbeat"></i> <span>PORTAL SAÚDE</span></a></li>
+
         <!-- <li>
           <a href="{{Route('admin.analise.index')}}">
             <i class="fa fa-file-text-o"></i>  

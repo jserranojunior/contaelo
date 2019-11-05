@@ -19,7 +19,7 @@
       <div class="col-lg-12">
       <div class="row justify-content-sm-center">
                 <div class="col-sm-12 text-center">
-                    <img class="img-logo img-logo-topo img-fluid" src="img/elo-logo.png" alt="">                   
+                    <img class="img-logo img-logo-topo img-fluid" src="{{ url('img/elo-logo.png') }}" alt="">                   
                 </div>
             </div>
        

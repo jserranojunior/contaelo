@@ -43,6 +43,9 @@ Route::group(['as' => 'admin.','prefix' => 'admin'],function(){
       Route::post('/operacoes/emitir', 'Admin\Operacoes\operacoesController@emitir')->name('admin.operacoes.emitir');
       Route::post('/operacoes/excluir', 'Admin\Operacoes\operacoesController@excluir')->name('admin.operacoes.excluir');
     
+      /* PORTAL SAUDE */
+      Route::get('/portalsaude', 'Admin\PortalSaude\portalSaudeController@index')->name('admin.portalsaude');
+
     /* OPERACOES SMART */
     Route::get('/operacoes', 'Admin\Operacoes\smartOperacoesController@index')->name('admin.operacoes.smart');
     Route::any('/operacoes/editar/{id}', 'Admin\Operacoes\smartOperacoesController@edit')->name('admin.operacoes.smart.edit');

@@ -175,6 +175,8 @@
             <li><a href="{{URL('extrato')}}"><i class="fa fa-line-chart"></i> <span>EXTRATO</span></a></li>
             
             <li><a href="{{URL('deposito')}}"><i class="fa fa-plus-square-o"></i> <span>DEPOSITO</span></a></li>
+            <li><a href="{{URL('#')}}"><i class="fa fa-heartbeat"></i> <span>ELO PORTAL SAÚDE</span></a></li>  
+                    
             <li><a href="{{URL('resgate')}}"><i class="fa fa-life-ring"></i> <span>RESGATE</span></a></li>          
             <!-- <li><a href="{{URL('smart/resgate')}}"><i class="fa fa-circle-o-notch "></i> <span>TRANSFÊRENCIAS <br> ENTRE CONTAS</span></a></li>           -->
              
@@ -188,9 +190,9 @@
 
         <!-- <li class=""><a target="_blank" href="https://play.google.com/store/apps/details?id=br.com.brasilprepago"><i class="fa fa-arrow-circle-down"></i> <span>BPP APP</span></a></li>   -->
 
-
-        <!-- <li class=""><a href="{{URL('transferencia')}}"><i class="fa fa-exchange"> -->
-          <!-- </i><span>TRANSFÊRENCIA</span></a> -->
+        <!-- {{URL('transferencia')}} -->
+        <li class=""><a href="#"><i class="fa fa-exchange">
+          </i><span>TRANSFÊRENCIA</span></a>
         </li>
 
         <li ><a class="link-whatsapp" href="whatsapp://send?phone=5511998068930"><i class="fa fa-comments">
