@@ -10,17 +10,11 @@
         <small>Seja bem vindo</small>
       </h1>
 
-
-
-
-      <!-- Large modal -->
 <div class="modal fade" id="modalSaude" tabindex="-1" role="dialog" aria-labelledby="modalSaude" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-    
+    <div class="modal-content">    
       <div class="modal-body">
-      <div class="container-fluid">
-       
+      <div class="container-fluid">       
       <div class="row">
           <div class="col-md-6 bg-elo-portal">          
             <div class="row justify-content-center">
@@ -30,20 +24,23 @@
             </button>         
             <img src="/img/popup/elo-portal-saude.jpeg" class="img-popup img-responsive" alt="">
               </div>
-            </div>
-            
+            </div>            
           </div>
-
-
-
-
-          <div class="col-md-6 bg-usufrua text-center float-center">
-          <!-- <button type="button" class="close text-left btn-white " data-dismiss="modal" aria-label="Close">
-              <span class="text-white text-light" aria-hidden="true">&times;</span>
-            </button>   -->
-            <img src="/img/popup/usufrua.jpeg" class="img-popup img-responsive" alt="">
-            
+          <div class="col-md-6 bg-usufrua text-center float-center">          
+            <img src="/img/popup/usufrua.jpeg" class="img-popup img-responsive" alt="">            
           </div>
+      </div>
+      <div class="row bg-inscreva">
+
+      <form action="{{ url('/portalsaude') }}" method="post">
+        <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
+        <input type="hidden" name="id_user" value="{{auth()->user()->id}}">
+        
+        <div class="col-12 text-center">
+          <input type="submit" class="btn btn-inscreva" value="INSCREVA-SE">
+        </div>
+      </form>
+        
       </div>
       </div>
       </div>
@@ -71,6 +68,23 @@
   <!-- /.content-wrapper -->
 
 <style>
+.bg-inscreva{
+  background-color: #337ab7;
+}
+.btn-inscreva{
+  font-weight: bold;
+    color: #f8f9fa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #3c8dbc;
+    background-image: none;
+    border-color: #f8f9fa;
+}
+.btn-inscreva:hover{
+color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
 .img-popup.img-responsive {
     margin: 0 auto;
 }

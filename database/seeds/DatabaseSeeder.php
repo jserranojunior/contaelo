@@ -12,6 +12,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
+        $valores = array(
+            'id_user' => 5,
+            
+        );
+
+       DB::table('user_portal_saude')->insert($valores);
+            
+
 /*
        DB::table('transacoes')
        ->where('tipo', 'bonus')
@@ -62,15 +71,15 @@ class DatabaseSeeder extends Seeder
         
 */
   
-        $date = date('Y-m-d h:i:s', time());
+        // $date = date('Y-m-d h:i:s', time());
 
-        DB::table('admins')
-                ->insert([
-                    'name' => 'David Delira',
-                    'email' => 'davidoliveiralira@gmail.com',
-                    'password' => Hash::make('Ma140690@'),
-                    'image' => 'david.jpg',
-                    ]);
+        // DB::table('admins')
+        //         ->insert([
+        //             'name' => 'David Delira',
+        //             'email' => 'davidoliveiralira@gmail.com',
+        //             'password' => Hash::make('Ma140690@'),
+        //             'image' => 'david.jpg',
+        //             ]);
 
         // DB::table('admins')
         //         ->insert([
@@ -80,13 +89,13 @@ class DatabaseSeeder extends Seeder
         //             'image' => 'david.jpg',
         //             ]);
 
-        DB::table('admins')
-                    ->insert([
-                        'name' => 'Jorge Serrano Junior',
-                        'email' => 'jorgeserranojunior@hotmail.com',
-                        'password' => Hash::make('carro'),
-                        'image' => 'jorge.jpg',
-                        ]);
+        // DB::table('admins')
+        //             ->insert([
+        //                 'name' => 'Jorge Serrano Junior',
+        //                 'email' => 'jorgeserranojunior@hotmail.com',
+        //                 'password' => Hash::make('carro'),
+        //                 'image' => 'jorge.jpg',
+        //                 ]);
 /*
         DB::table('transacoes')
         ->insert([

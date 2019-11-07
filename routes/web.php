@@ -45,6 +45,8 @@ Route::group(['as' => 'admin.','prefix' => 'admin'],function(){
     
       /* PORTAL SAUDE */
       Route::get('/portalsaude', 'Admin\PortalSaude\portalSaudeController@index')->name('admin.portalsaude');
+     
+
 
     /* OPERACOES SMART */
     Route::get('/operacoes', 'Admin\Operacoes\smartOperacoesController@index')->name('admin.operacoes.smart');
@@ -70,6 +72,8 @@ Route::group(['as' => 'admin.','prefix' => 'admin'],function(){
 /* ROTAS CLIENTES */
 
 Route::group(['as' => 'usuario.', 'middleware' => ['auth:web']],function(){
+
+  Route::post('/portalsaude', 'Admin\PortalSaude\portalSaudeController@create')->name('admin.portalsaude.create');
   
   /* ############## PASANAKU ########## */
 

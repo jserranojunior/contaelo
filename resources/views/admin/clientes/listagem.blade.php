@@ -10,20 +10,20 @@
       </h1>      
     </section>
 
-    <section class="content container-fluid">
-<div class="box">
-  <div class="box-body">
-       <table class="table table-condensed table-hover" id="tabelaClientes">
-    <thead>
-        <tr>
-            <th>NOME</th>
-            <th>EMAIL</th>
-            <th>CPF</th>    
-            <th>DATA DE NASCIMENTO</th> 
-            <th>CELULAR</th> 
-         </tr>
-    </thead>
-    <tbody>     
+<section class="content container-fluid">
+  <div class="box">
+    <div class="box-body">
+        <table class="table table-condensed table-hover" id="tabelaClientes">
+      <thead>
+          <tr>
+              <th>NOME</th>
+              <th>EMAIL</th>
+              <th>CPF</th>    
+              <th>DATA DE NASCIMENTO</th> 
+              <th>CELULAR</th> 
+          </tr>
+      </thead>
+      <tbody>     
         @foreach ($dados as $item)
 
             <tr onclick="editarCliente({{$item->id}})" class="mouse-point">
@@ -34,8 +34,8 @@
                 <td> {{$item->celular}}</td>
             </tr>      
         @endforeach
-        </tbody>
-        </table>   
+      </tbody>
+    </table>   
   </div>
 </div>         
 

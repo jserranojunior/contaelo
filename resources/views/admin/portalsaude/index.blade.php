@@ -32,14 +32,15 @@
                 </tr>
                 </thead>
                 <tbody>
+                    @foreach($dados as $item)
                     <tr>
-                        <td>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>{{$item->id_user}}</td>
+                        <td>{{$item->nome}}</td>
+                        <td>{{$item->celular}}</td>
+                        <td>{{$item->email}}</td>
+                        <td>{{$item->created_at}}</td>
                     </tr>
+                    @endforeach
                     </table>   
   </div>
 </div>   

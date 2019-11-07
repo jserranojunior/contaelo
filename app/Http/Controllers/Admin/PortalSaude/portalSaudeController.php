@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin\PortalSaude;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Admin\Header\notificacoesController;
+use App\Models\Tables\UsersPortalSaude;
+use App\Models\Tables\User;
+
 
 class portalSaudeController extends Controller
 {
@@ -15,9 +18,24 @@ class portalSaudeController extends Controller
      */
     public function index()
     {
+        $usersPortalSaude = new UsersPortalSaude();
+        $usersPortalSaude = $usersPortalSaude->get();
+
+        foreach($usersPortalSaude as $dadosUsers){            
+            $this->Users = new User();
+            $this->Users = $this->Users->where('id', '=', $dadosUsers->id_user)->get();
+         
+            foreach($this->Users as $user){
+                $dadosUsers->nome = $user->name;
+                $dadosUsers->celular = $user->celular;
+                $dadosUsers->email = $user->email;
+            }
+            
+        }
+
         $notificacao = new notificacoesController();
         $notificacao = $notificacao->notification();   
-        $dados = array('notificacoes' =>  $notificacao);
+        $dados = array('dados' => $usersPortalSaude, 'notificacoes' =>  $notificacao);
         return view('admin.portalsaude.index')->with($dados);
     }
 
@@ -26,9 +44,17 @@ class portalSaudeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create(Request $request)
+    {      
+       
+            $usersPortalSaude = new UsersPortalSaude();
+            $usersPortalSaude = $usersPortalSaude->create($request->all());
+            $usersPortalSaude->save(); 
+            
+            
+            return redirect('/cliente');
+            
+            
     }
 
     /**
