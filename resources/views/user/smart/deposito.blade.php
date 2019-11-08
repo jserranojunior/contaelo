@@ -21,7 +21,7 @@
                 <div class="col-lg-6">  
                   <input type="text" class="form-control dinheiro_mascara" name="valor" required>
                 </div>
-              </div><!-- FECHAMENTO FORM_GROUP -->
+              </div>
 
 
               <div class="form-group">
@@ -29,64 +29,101 @@
                 <div class="col-lg-6">  
                   <input type="date" class="form-control data-automatica" value="{{$dataAtual}}" name="data" required>
                 </div>
-              </div><!-- FECHAMENTO FORM_GROUP -->
+              </div>
 
               <div class="form-group">
                 <label for="tipodeposito" class="col-lg-6">TIPO DE DEPOSITO</label>
                 <div class="col-lg-6">  
-                  <select class="form-control" name="tipodeposito" >
-                    <option value="" selected>DINHEIRO</option>
-                 <!--   <option value="">BOLETO</option>
-                    <option value="">TRANSFÊRENCIA</option>
-                    -->
-                  </select>
+
+                  <select class="form-control" required name="tipodeposito" id="tipodeposito">
+                    <option value="" selected></option>
+                    <option value="DINHEIRO" >DINHEIRO</option>
+                    <option value="TRANSFERÊNCIA">TRANSFERÊNCIA</option>
+                  </select>               
+
+                  
                 </div>
-              </div><!-- FECHAMENTO FORM_GROUP -->
-              <!--
+              </div>    
+
               <div class="form-group">
-                <label for="banco" class="col-sm-6">BANCO</label>
-                <div class="col-sm-6">  
-                    <select class="form-control" name="banco">
-                      <option value="" disabled selected>SELECIONE</option>
-                      <option value="">BB</option>
-                      <option value="">CAIXA E.F.</option>
-                      <option value="">ITAU</option>
-                      <option value="">BRADESCO</option>
-                      <option value="">SMART</option>                
-                    </select>
+                <label for="localdeposito" id="labeldeposito"class="col-lg-6">LOCAL DE DEPOSITO</label>
+                <div class="col-lg-6"> 
+                  <select class="form-control"  required  name="localdeposito" id="localdeposito">
+                    
+                    <!-- DINHEIRO -->
+                    
+                    <option selected value=""></option>
+
+                    <option class="localdinheiro" value="DINHEIRO">Rua Bresser, 1235, Brás, Sao Paulo -SP</option>
+                    
+                    <!-- TRANSFERÊNCIA -->             
+                    <option class="localtransferencia"  value="Banco Santander">Banco Santander</option>
+                    <option class="localtransferencia" value="Caixa Econômica Federal">Caixa Econômica Federal</option>
+                    <option class="localtransferencia"  value="Lotérica">Lotérica</option>
+                    <option class="localtransferencia" value="Banco Itaú">Banco Itaú</option>
+                    <option class="localtransferencia"  value="Banco Bradesco">Banco Bradesco</option>                   
+                  
+                  </select>   
                 </div>
-              </div>
-              -->
-              <!-- FECHAMENTO FORM_GROUP -->
+              </div>  
 
               <div class="form-group text-right">
                 <div class="col-lg-6 col-lg-offset-6">  
                   <input type="submit" class="btn btn-primary form-control" value="DEPOSITAR">             
                 </div>
-              </div><!-- FECHAMENTO FORM_GROUP -->
+              </div>
                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-          </form>            
-           
-                       
-
-            <!-- DIV PARA CENTRALIZAR -->
-        </div>  <!-- END BODY BOX -->
-     </div>  <!-- END BOX -->
-        
-      
+          </form>  
+        </div>
+     </div>             
     </section>
-
-    <!-- Main content -->
     <section class="content container-fluid">
-
-      <!--------------------------
-        | Your Page Content Here |
-        -------------------------->
-
     </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
+  <script>
+                      $(document).ready(function() {
 
+                        $(".localtransferencia").css('display', 'none')
+                        $(".localdinheiro").css('display', 'none')  
+
+                        $("#localdeposito").val($("#localdeposito option:first").val());
+                        $("#tipodeposito").val($("#tipodeposito option:first").val());
+
+                        $("#tipodeposito").change(function(){
+                       
+                        if($(this).val() == "DINHEIRO"){
+                          
+                          $(".localtransferencia").css('display', 'none')
+                          $(".localdinheiro").css('display', 'block')  
+
+                          $("#labeldeposito").html('LOCAIS FÍSICOS') 
+
+                        
+                        $("#localdeposito").val($("#localdeposito option:first").val());
+
+                          // $(".localdeposito").val('').change()
+
+                        }else if($(this).val() == "TRANSFERÊNCIA"){
+                         
+                          $(".localdinheiro").css('display', 'none')  
+                          $(".localtransferencia").css('display', 'block') 
+
+                          $("#labeldeposito").html('NOSSAS CONTAS') 
+                          
+                          $("#localdeposito").val($("#localdeposito option:first").val());
+
+                        }else if($(this).val() == ""){
+                         
+                         $(".localdinheiro").css('display', 'none')  
+                         $(".localtransferencia").css('display', 'none') 
+
+                         $("#labeldeposito").html('LOCAL DE DEPOSITO') 
+
+                         $("#localdeposito").val($("#localdeposito option:first").val());
+                       }
+                        });
+                      });
+            
+                    </script>
 
 @endsection
