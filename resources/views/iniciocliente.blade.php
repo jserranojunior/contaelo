@@ -19,25 +19,43 @@
           <div class="col-md-6 bg-elo-portal">          
             <div class="row justify-content-center">
               <div class="col-xs-12 float-center">
-              <button type="button" class="close text-left btn-white " data-dismiss="modal" aria-label="Close">
-              <span class="text-white text-light" aria-hidden="true">&times;</span>
-            </button>         
-            <img src="/img/popup/elo-portal-saude.jpeg" class="img-popup img-responsive" alt="">
+                <button type="button" class="close text-left btn-white " data-dismiss="modal" aria-label="Close">
+                  <span class="text-white text-light" aria-hidden="true">&times;</span>
+                </button>
+              </div>  
+            <img src="/img/popup/elo-portal-saude-logo.jpeg" class="img-popup img-responsive" alt="">
+            <!-- <input type="submit" class="btn btn-inscreva" value="Assine Agora!"> -->
+            <div class="col-12 text-center">
+            <div class="btn btn-inscreva" onClick="javascript:this.form.submit();">
+              <h3 class="font-weight-bold btn-assine">Assine Agora!</h3>
+              <span>Você e seus dependentes<br> conectados ao mundo<br> da saúde sem carência</span>
+            </div>
+            </div>
+              <div class="col-12 text-center">
+                Apenas <span class="valor-elo-saude h4 font-weight-bold">R$ 25,00/Mês</span>
               </div>
-            </div>            
+              <div class="row row-space-elo-portal">
+              <div class="col-12 text-center">
+                *Com pagamento de R$ 300,00/ano
+              </div>
+              </div>
+              </div>
+                      
+          
           </div>
-          <div class="col-md-6 bg-usufrua text-center float-center">          
+          <div class="col-md-6 bg-usufrua text-center float-center">        
+          <!-- <img src="/img/popup/elo-portal-saude.jpeg" class="img-popup img-responsive" alt="">   -->
             <img src="/img/popup/usufrua.jpeg" class="img-popup img-responsive" alt="">            
           </div>
       </div>
       <div class="row bg-inscreva">
 
-      <form action="{{ url('/portalsaude') }}" method="post">
+      <form action="{{ url('/portalsaude') }}" name="formportalsaude" method="post">
         <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
         <input type="hidden" name="id_user" value="{{auth()->user()->id}}">
         
         <div class="col-12 text-center">
-          <input type="submit" class="btn btn-inscreva" value="INSCREVA-SE">
+          <!-- <input type="submit" class="btn btn-inscreva" value="INSCREVA-SE"> -->
         </div>
       </form>
         
@@ -76,7 +94,7 @@
     color: #f8f9fa;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: #3c8dbc;
+    background-color:  #0697b2;
     background-image: none;
     border-color: #f8f9fa;
 }
@@ -128,6 +146,15 @@ color: #212529;
     text-align: left;
     float: left;
     opacity: 1;
+}
+.row-space-elo-portal{
+  margin-top:15px;
+}
+.font-weight-bold{
+  font-weight: bold
+}
+.btn-assine{
+  margin-top:10px;
 }
 </style>
  
