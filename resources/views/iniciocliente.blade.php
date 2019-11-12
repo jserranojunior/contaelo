@@ -26,7 +26,7 @@
             <img src="/img/popup/elo-portal-saude-logo.jpeg" class="img-popup img-responsive" alt="">
             <!-- <input type="submit" class="btn btn-inscreva" value="Assine Agora!"> -->
             <div class="col-12 text-center">
-            <div class="btn btn-inscreva" onClick="javascript:this.form.submit();">
+            <div class="btn btn-inscreva" onClick="inscrever()">
               <h3 class="font-weight-bold btn-assine">Assine Agora!</h3>
               <span>Você e seus dependentes<br> conectados ao mundo<br> da saúde sem carência</span>
             </div>
@@ -50,7 +50,7 @@
       </div>
       <div class="row bg-inscreva">
 
-      <form action="{{ url('/portalsaude') }}" name="formportalsaude" method="post">
+      <form action="{{ url('/portalsaude') }}" id="formportalsaude" name="formportalsaude" method="post">
         <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
         <input type="hidden" name="id_user" value="{{auth()->user()->id}}">
         
@@ -69,7 +69,15 @@
 <script type="text/javascript">
     $(window).on('load',function(){
         $('#modalSaude').modal('show');
+
+
     });
+    
+
+    function inscrever(){
+      console.log("funcionando");
+      document.getElementById("formportalsaude").submit(); 
+    }
 </script>
       
     </section>

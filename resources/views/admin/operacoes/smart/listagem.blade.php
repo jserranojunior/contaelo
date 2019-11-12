@@ -29,6 +29,12 @@
                         OPERAÇÃO
                     </th>  
                     <th>
+                        TIPO
+                    </th>
+                    <th>
+                        LOCAL
+                    </th>  
+                    <th>
                         USUARIO
                     </th>
                     <th>
@@ -50,6 +56,12 @@
                         </td>
                         <td class="text-uppercase">
                             {{$item->tipo}}
+                        </td>
+                        <td class="text-uppercase">
+                            {{$item->tipodeposito}}
+                        </td>
+                        <td class="text-uppercase">
+                            {{$item->localdeposito}}
                         </td>
                         <td>
                            {{$item->name}}

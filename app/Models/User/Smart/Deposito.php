@@ -26,6 +26,8 @@ class Deposito extends Model
           'valor' => $request->valor,
           'tipo' => 'deposito',
           'data_agendada' => $request->data,
+          'tipodeposito' => $request->tipodeposito,
+          'localdeposito' => $request->localdeposito,
           'pagamento_feito' =>false,
           'data_efetuada' => $dataCompleta,
           'created_at' => $dataCompleta,

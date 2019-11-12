@@ -40,7 +40,7 @@ class Operacoes extends Model
 
         $select = DB::table('smart_transacoes as T')
         ->join('users as U','T.id_user','=', 'U.id')
-        ->select('T.id as id', 'T.id_user', 'valor', 'data_agendada','pagamento_feito', 'tipo', 'name')
+        ->select('T.id as id', 'T.id_user', 'valor', 'tipodeposito', 'localdeposito', 'data_agendada','pagamento_feito', 'tipo', 'name')
         ->where('pagamento_feito', false)
         ->get();
         
