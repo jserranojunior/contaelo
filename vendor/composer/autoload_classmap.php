@@ -3440,6 +3440,7 @@ return array(
     'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => $vendorDir . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
     'Transacoes' => $baseDir . '/database/migrations/2017_12_05_125940_transacoes.php',
     'TypeError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+    'UserBanco' => $baseDir . '/database/migrations/2019_11_26_175138_user_banco.php',
     'UsersInfo' => $baseDir . '/database/migrations/2017_11_28_114656_users_info.php',
     'UsersPortalSaude' => $baseDir . '/database/migrations/2019_11_06_235248_users_portal_saude.php',
     'ValoresSmartcoin' => $baseDir . '/database/migrations/2018_04_11_112744_valores_smartcoin.php',

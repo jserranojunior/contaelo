@@ -3752,6 +3752,7 @@ class ComposerStaticInit83e28779b66b8b9a3758bb85d31ff5aa
         'TijsVerkoyen\\CssToInlineStyles\\Css\\Rule\\Rule' => __DIR__ . '/..' . '/tijsverkoyen/css-to-inline-styles/src/Css/Rule/Rule.php',
         'Transacoes' => __DIR__ . '/../..' . '/database/migrations/2017_12_05_125940_transacoes.php',
         'TypeError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+        'UserBanco' => __DIR__ . '/../..' . '/database/migrations/2019_11_26_175138_user_banco.php',
         'UsersInfo' => __DIR__ . '/../..' . '/database/migrations/2017_11_28_114656_users_info.php',
         'UsersPortalSaude' => __DIR__ . '/../..' . '/database/migrations/2019_11_06_235248_users_portal_saude.php',
         'ValoresSmartcoin' => __DIR__ . '/../..' . '/database/migrations/2018_04_11_112744_valores_smartcoin.php',

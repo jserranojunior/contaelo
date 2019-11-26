@@ -17319,6 +17319,10 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -18371,6 +18375,33 @@ var render = function() {
                             }
                           }),
                           _vm._v(" +591\n                                ")
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "a",
+                        {
+                          staticClass: "dropdown-item",
+                          attrs: { href: "#" },
+                          on: {
+                            click: function($event) {
+                              _vm.setCodeCountry(
+                                "+058",
+                                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1200px-Flag_of_Venezuela.svg.png"
+                              )
+                            }
+                          }
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "flag",
+                            attrs: {
+                              src:
+                                "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1200px-Flag_of_Venezuela.svg.png",
+                              alt: ""
+                            }
+                          }),
+                          _vm._v(" +058\n                                ")
                         ]
                       )
                     ]

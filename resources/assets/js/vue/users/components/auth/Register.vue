@@ -26,6 +26,10 @@
                                 <a class="dropdown-item" href="#" @click="setCodeCountry('+591', 'https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_Bolivia_%28state%29.svg')">
                                     <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Flag_of_Bolivia_%28state%29.svg" alt=""> +591
                                 </a>
+
+                                <a class="dropdown-item" href="#" @click="setCodeCountry('+058', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1200px-Flag_of_Venezuela.svg.png')">
+                                    <img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Venezuela.svg/1200px-Flag_of_Venezuela.svg.png" alt=""> +058
+                                </a>
                             </div>
                         </div>
                     </div>

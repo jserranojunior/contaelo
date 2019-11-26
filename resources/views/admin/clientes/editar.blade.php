@@ -43,6 +43,11 @@
                 <input type="text" class="form-control cpf_mascara" value="{{$item->cpf}}" name="cpf">
             </td>
         </tr>   
+
+        
+
+
+        
         
         <tr>
             <!-- <td>
@@ -138,7 +143,7 @@
 
 
             <td>
-                <label for="rg" class="label-control"> RG/RNE </label>
+                <label for="rg" class="label-control"> RG/RNE/RNM/CI </label>
             </td>
             <td> 
                 <input type="text" value="{{$item->rg}}" class="form-control" name="rg">
@@ -161,6 +166,60 @@
             <td colspan="3"> 
               <input type="text" value="{{$item->conjugue}}" class="form-control" name="conjugue">
             </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="dependente"  class="label-control"> Dependente </label>
+            </td>
+            <td colspan="3"> 
+              <input type="text" value="{{$item->dependente}}" class="form-control" name="dependente">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>
+                <label for="banco" class="label-control"> Banco </label>
+            </td>
+            <td> 
+                <input type="text" value="{{$item->banco}}" class="form-control" name="banco">
+            </td>
+
+
+            <td>
+                <label for="tipodeconta" class="label-control"> Tipo de conta </label>
+            </td>
+            <td> 
+                <input type="text" value="{{$item->tipodeconta}}" class="form-control" name="tipodeconta">
+            </td>
+        </tr>
+
+        <tr>
+        <td>
+                <label for="agencia" class="label-control"> Agencia </label>
+            </td>
+            <td> 
+                <input type="text" value="{{$item->agencia}}" class="form-control" name="agencia">
+            </td>
+
+            <td>
+                <label for="conta" class="label-control"> Conta </label>
+            </td>
+            <td> 
+                <input type="text" value="{{$item->conta}}" class="form-control" name="conta">
+            </td>
+
+            <tr>
+            <td>
+                <label for="observacoes"  class="label-control"> Observações </label>
+            </td>
+            <td colspan="3"> 
+              <input type="text" value="{{$item->observacoes}}" class="form-control" name="observacoes">
+            </td>
+        </tr>
+
+            
         </tr>
 
         

@@ -45,6 +45,12 @@ class Clientes extends Model
             'estado' => $request->estado,
             'numero' => $request->numero,
             'facebook' => $request->facebook,
+            'dependente' => $request->dependente,
+            'banco' => $request->banco,
+            'conta' => $request->conta,
+            'agencia' => $request->agencia,
+            'tipodeconta' => $request->tipodeconta,
+            'observacoes' => $request->observacoes,
             'cpf' => preg_replace("/[^0-9]/", "", $request->cpf),
         );
 
@@ -163,6 +169,12 @@ class Clientes extends Model
         $selectDados = DB::table('users as u')
         ->select('u.id as id' ,'u.cpf', 'u.rg', 'u.cep','u.bairro', 'u.conjugue', 'u.logradouro', 'u.numero',
         'u.estado','u.cidade','u.facebook', 'u.mae', 'u.email', 'u.celular','u.data_nascimento', 'u.celular','u.name',
+        'u.dependente',
+'u.banco',
+'u.conta',
+'u.agencia',
+'u.tipodeconta',
+'u.observacoes',
             's.valor as pasa_valor','c.valor as coin_valor')
             ->leftjoin('saldos as s', function ($joinSaldo) {
                 $joinSaldo->on( 'u.id', '=', 's.id_user')
