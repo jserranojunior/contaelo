@@ -10,7 +10,7 @@
         <small>Seja bem vindo</small>
       </h1>
 
-<div class="modal fade" id="modalSaude" tabindex="-1" role="dialog" aria-labelledby="modalSaude" aria-hidden="true">
+<!-- <div class="modal fade" id="modalSaude" tabindex="-1" role="dialog" aria-labelledby="modalSaude" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">    
       <div class="modal-body">
@@ -24,7 +24,6 @@
                 </button>
               </div>  
             <img src="/img/popup/elo-portal-saude-logo.jpeg" class="img-popup img-responsive" alt="">
-            <!-- <input type="submit" class="btn btn-inscreva" value="Assine Agora!"> -->
             <div class="col-12 text-center">
             <div class="btn btn-inscreva" onClick="inscrever()">
               <h3 class="font-weight-bold btn-assine">Assine Agora!</h3>
@@ -44,7 +43,6 @@
           
           </div>
           <div class="col-md-6 bg-usufrua text-center float-center">        
-          <!-- <img src="/img/popup/elo-portal-saude.jpeg" class="img-popup img-responsive" alt="">   -->
             <img src="/img/popup/usufrua.jpeg" class="img-popup img-responsive" alt="">            
           </div>
       </div>
@@ -55,7 +53,6 @@
         <input type="hidden" name="id_user" value="{{auth()->user()->id}}">
         
         <div class="col-12 text-center">
-          <!-- <input type="submit" class="btn btn-inscreva" value="INSCREVA-SE"> -->
         </div>
       </form>
         
@@ -64,14 +61,14 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <script type="text/javascript">
-    $(window).on('load',function(){
-        $('#modalSaude').modal('show');
+    // $(window).on('load',function(){
+    //     $('#modalSaude').modal('show');
 
 
-    });
+    // });
     
 
     function inscrever(){
